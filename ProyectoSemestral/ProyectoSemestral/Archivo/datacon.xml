@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Conexion>
+	<!--Aurelio-->
+	<!--<datasorurce>VVNFUi1QQ1xTUUxFWFBSRVNT</datasorurce>-->
+	
+	<!--Daniel-->
+	<!--<datasorurce>REVTS1RPUC1TUDZTQ0ZQXFNRTEVYUFJFU1M=</datasorurce>-->
+	
+	<!--Pedro-->
+	<datasorurce>REVTS1RPUC1TUDZTQ0ZQXFNRTEVYUFJFU1M=</datasorurce>
+
+	<!--Jordan-->
+	<!--<datasorurce>REVTS1RPUC0ySlVMSFRG</datasorurce>-->
+	
+	<initialcatalog>TGFib3JhdG9yaW8z</initialcatalog>
+	<usuario>bGFiMw==</usuario>
+	<pass>MTIzNA==</pass>
+</Conexion>
