@@ -3,8 +3,9 @@ Imports System.Xml
 Module Module1
     Public mYConn As SqlConnection
     Public accion As String
+    Public tipo As Integer
     Public idUsuario As Integer
-    Public idEmpleado As Integer
+    Public nombreCompleto As String
 
     Sub conexion()
         Dim cadenadeconexion As String

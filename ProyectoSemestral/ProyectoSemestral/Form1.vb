@@ -7,7 +7,7 @@
             conexion()
             mYConn.Open()
             ' MsgBox("conexion realizada con exito", MessageBoxIcon.Information)'
-            MenuPrincipal.Show()
+            Login.Show()
             Me.Hide()
         Catch ex As Exception
             MessageBox.Show("Error al realizar la conexion", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
