@@ -26,7 +26,6 @@ Partial Class Bienvenida
         Me.horaSistema = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.txtBienvenida = New System.Windows.Forms.Label()
         Me.gbxInfo.SuspendLayout()
         Me.SuspendLayout()
@@ -36,7 +35,6 @@ Partial Class Bienvenida
         Me.gbxInfo.Controls.Add(Me.horaSistema)
         Me.gbxInfo.Controls.Add(Me.Label2)
         Me.gbxInfo.Controls.Add(Me.Label1)
-        Me.gbxInfo.Controls.Add(Me.Button1)
         Me.gbxInfo.Controls.Add(Me.txtBienvenida)
         Me.gbxInfo.Location = New System.Drawing.Point(18, 12)
         Me.gbxInfo.Name = "gbxInfo"
@@ -48,7 +46,7 @@ Partial Class Bienvenida
         '
         Me.horaSistema.AutoSize = True
         Me.horaSistema.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.horaSistema.Location = New System.Drawing.Point(254, 334)
+        Me.horaSistema.Location = New System.Drawing.Point(222, 331)
         Me.horaSistema.Name = "horaSistema"
         Me.horaSistema.Size = New System.Drawing.Size(245, 36)
         Me.horaSistema.TabIndex = 5
@@ -58,7 +56,7 @@ Partial Class Bienvenida
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(182, 273)
+        Me.Label2.Location = New System.Drawing.Point(150, 270)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(689, 36)
         Me.Label2.TabIndex = 4
@@ -73,16 +71,6 @@ Partial Class Bienvenida
         Me.Label1.Size = New System.Drawing.Size(270, 44)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Menu Principal"
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(835, 23)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(182, 47)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Cerrar Sesión"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'txtBienvenida
         '
@@ -112,6 +100,5 @@ Partial Class Bienvenida
     Friend WithEvents horaSistema As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents txtBienvenida As Label
 End Class

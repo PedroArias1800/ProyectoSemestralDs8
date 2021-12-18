@@ -42,7 +42,7 @@ Public Class RegistrarCliente
     End Sub
 
     Private Sub RegistrarCliente_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Bienvenida.MdiParent = Me
+        Bienvenida.MdiParent = MenuPrincipal
         Bienvenida.WindowState = FormWindowState.Maximized
         Bienvenida.Show()
     End Sub

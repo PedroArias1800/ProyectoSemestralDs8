@@ -12,33 +12,22 @@
         ElseIf tipo = 2 Then
             Bienvenida.txtBienvenida.Text = "Bienvenido Cajero " & nombreCompleto
             'Ocultando opciones de usuarios
-            UsuarioToolStripMenuItem.Visible = False
-            UsuarioToolStripMenuItem1.Visible = False
-            UsuarioToolStripMenuItem2.Visible = False
+            AdministracionToolStripMenuItem.Visible = False
+            ReporteToolStripMenuItem.Visible = False
 
-            'Ocultando opciones de productos
-            ProductoToolStripMenuItem.Visible = False
-            ProductoToolStripMenuItem1.Visible = False
-            ProductoToolStripMenuItem2.Visible = False
-            ProductoToolStripMenuItem3.Visible = False
-
-            'Ocultando lo de eliminar
-            EliminarToolStripMenuItem.Visible = False
+            'Ocultando opciones de inventario
+            InventarioToolStripMenuItem.Visible = False
 
         ElseIf tipo = 3 Then
             Bienvenida.txtBienvenida.Text = "Bienvenido Personal De Inventario " & nombreCompleto
+
             'Ocultando opciones de usuarios
-            UsuarioToolStripMenuItem.Visible = False
-            UsuarioToolStripMenuItem1.Visible = False
-            UsuarioToolStripMenuItem2.Visible = False
+            AdministracionToolStripMenuItem.Visible = False
+            ReporteToolStripMenuItem.Visible = False
 
-            'Ocultando opciones de cliente
-            ClienteToolStripMenuItem.Visible = False
-            ClienteToolStripMenuItem1.Visible = False
-            ClienteToolStripMenuItem2.Visible = False
-
-            'Ocultando lo de cobrar
-            CobrarToolStripMenuItem.Visible = False
+            'Ocultando opciones de cajero
+            FacturacionToolStripMenuItem.Visible = False
+            ClientesToolStripMenuItem.Visible = False
 
         Else
             tipo = 0
@@ -46,7 +35,7 @@
             idUsuario = 0
             MsgBox("Vuelva a iniciar sesión nuevamente...", vbYes, "Ha ocurrido un error")
         End If
-
+        ItemSesion.Text = nombreCompleto
         Bienvenida.horaSistema.Text = "Hora del sistema: " & Now
         BienvenidaToolStripMenuItem.Visible = False
         Bienvenida.MdiParent = Me
@@ -56,28 +45,27 @@
     End Sub
 
     'Registrar Usuario
-    Private Sub UsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuarioToolStripMenuItem.Click
+    Private Sub UsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrearUsuarioToolStripMenuItem.Click
         RegistrarUsuario.MdiParent = Me
         RegistrarUsuario.WindowState = FormWindowState.Maximized
         RegistrarUsuario.Show()
     End Sub
 
-    'Actualizar Usuario
-    Private Sub UsuarioToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles UsuarioToolStripMenuItem1.Click
-        accion = "U"
-        Actualizar.Close()
-        Actualizar.MdiParent = Me
-        Actualizar.WindowState = FormWindowState.Maximized
-        Actualizar.Show()
+    'Facturar - Cobrar
+    Private Sub CobrarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CobrarToolStripMenuItem1.Click
+        'Cobrar
+
     End Sub
 
     'Buscar Usuario
-    Private Sub UsuarioToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles UsuarioToolStripMenuItem2.Click
-
+    Private Sub CrearClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrearClienteToolStripMenuItem2.Click
+        RegistrarCliente.MdiParent = Me
+        RegistrarCliente.WindowState = FormWindowState.Maximized
+        RegistrarCliente.Show()
     End Sub
 
     'Actualizar Cliente
-    Private Sub ClienteToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ClienteToolStripMenuItem1.Click
+    Private Sub ClienteToolStripMenuItem1_Click(sender As Object, e As EventArgs)
         accion = "C"
         Actualizar.Close()
         Actualizar.MdiParent = Me
@@ -85,8 +73,38 @@
         Actualizar.Show()
     End Sub
 
+    'Actualizar Usuario
+    Private Sub ActualizarUsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ActualizarUsuarioToolStripMenuItem.Click
+        accion = "U"
+        Actualizar.Close()
+        Actualizar.MdiParent = Me
+        Actualizar.WindowState = FormWindowState.Maximized
+        Actualizar.Show()
+
+    End Sub
+
+    'Crear Producto
+    Private Sub CrearProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrearProductoToolStripMenuItem2.Click
+        RegistrarProducto.MdiParent = Me
+        RegistrarProducto.WindowState = FormWindowState.Maximized
+        RegistrarProducto.Show()
+    End Sub
+
+    'Cerrar Sesión
+    Private Sub CerrarSesiónToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarSesiónToolStripMenuItem.Click
+        'idUsuario = 0
+        'tipo = 0
+        'nombreCompleto = ""
+        'Me.Close()
+        'Login.txtEmail.Text = ""
+        'Login.txtPassword.Text = ""
+        'Login.Show()
+        'MenuPrincipal.Hide()
+        Application.Restart()
+    End Sub
+
     'Actualizar Producto
-    Private Sub ProductoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ProductoToolStripMenuItem1.Click
+    Private Sub ActualizarProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ActualizarProductoToolStripMenuItem.Click
         accion = "P"
         Actualizar.Close()
         Actualizar.MdiParent = Me
@@ -94,23 +112,26 @@
         Actualizar.Show()
     End Sub
 
-    Private Sub ClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClienteToolStripMenuItem.Click
-        RegistrarCliente.MdiParent = Me
-        RegistrarCliente.WindowState = FormWindowState.Maximized
-        RegistrarCliente.Show()
-    End Sub
-
-    Private Sub ProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProductoToolStripMenuItem.Click
-        'RegistrarProducto.MdiParent = Me
-        'RegistrarProducto.WindowState = FormWindowState.Maximized
-        'RegistrarProducto.Show()
-    End Sub
-
-    Private Sub ProductoToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ProductoToolStripMenuItem2.Click
+    'Eliminar Producto
+    Private Sub EliminarProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarProductoToolStripMenuItem.Click
         accion = "E"
         Actualizar.Close()
         Actualizar.MdiParent = Me
         Actualizar.WindowState = FormWindowState.Maximized
         Actualizar.Show()
+    End Sub
+
+    'Actualizar Cliente
+    Private Sub ActualizarClienteToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ActualizarClienteToolStripMenuItem2.Click
+        accion = "C"
+        Actualizar.Close()
+        Actualizar.MdiParent = Me
+        Actualizar.WindowState = FormWindowState.Maximized
+        Actualizar.Show()
+    End Sub
+
+    'Reporte
+    Private Sub ReporteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteToolStripMenuItem.Click
+        'Reporte
     End Sub
 End Class

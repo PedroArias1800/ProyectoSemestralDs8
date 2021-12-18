@@ -13,34 +13,6 @@ Public Class RegistrarUsuario
         cboTipoCuenta.Items.Add("Inventario")
         cboTipoCuenta.SelectedIndex = 0
 
-        'glComand.Connection = mYConn
-        'glComand.CommandText = "SP_BuscarTipoCuenta"
-        'glComand.CommandTimeout = 0
-        'glComand.CommandType = CommandType.StoredProcedure
-
-        'Try
-        'mYConn.Open()
-        'glComand.ExecuteNonQuery()
-        'SqlDa = New SqlDataAdapter(glComand)
-        'SqlDa.Fill(dtOrdenes)
-        'If dtOrdenes.Rows.Count <> 0 Then
-        'dtgIniciarSesion.DataSource = dtOrdenes
-        'idUsuario = Val(dtgIniciarSesion.Item(0, 0).Value)
-        'nombreCompleto = dtgIniciarSesion(1, 0).Value.ToString & " " & dtgIniciarSesion(2, 0).Value.ToString
-        'tipo = Val(dtgIniciarSesion.Item(3, 0).Value)
-        'MenuPrincipal.Show()
-        'Me.Hide()
-        'Else
-        'MsgBox("Datos inválidos, inténtelo de nuevo", vbYes, "Error")
-        'End If
-        '
-        'Catch ex As Exception
-        'MessageBox.Show(ex.Message)
-        'Finally
-        'If mYConn.State <> ConnectionState.Closed Then
-        'mYConn.Close()
-        'End If
-        'End Try
     End Sub
 
     Private Sub btnRegistrarUsuario_Click(sender As Object, e As EventArgs) Handles btnRegistrarUsuario.Click
@@ -100,7 +72,7 @@ Public Class RegistrarUsuario
     End Sub
 
     Private Sub RegistrarUsuario_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Bienvenida.MdiParent = Me
+        Bienvenida.MdiParent = MenuPrincipal
         Bienvenida.WindowState = FormWindowState.Maximized
         Bienvenida.Show()
     End Sub

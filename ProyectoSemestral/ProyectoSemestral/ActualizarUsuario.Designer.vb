@@ -28,7 +28,6 @@ Partial Class ActualizarUsuario
         Me.Label9 = New System.Windows.Forms.Label()
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtIntento = New System.Windows.Forms.TextBox()
         Me.txtId = New System.Windows.Forms.Label()
         Me.cboTipo = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
