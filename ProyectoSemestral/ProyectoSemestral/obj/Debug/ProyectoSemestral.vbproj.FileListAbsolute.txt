@@ -12,3 +12,5 @@ C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoS
 C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.xml
 C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.pdb
 C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.Login.resources
+C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.Actualizar.resources
+C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.ActualizarUsuario.resources

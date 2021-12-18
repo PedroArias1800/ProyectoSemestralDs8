@@ -124,7 +124,7 @@ Partial Class MenuPrincipal
         'ProductoToolStripMenuItem2
         '
         Me.ProductoToolStripMenuItem2.Name = "ProductoToolStripMenuItem2"
-        Me.ProductoToolStripMenuItem2.Size = New System.Drawing.Size(224, 26)
+        Me.ProductoToolStripMenuItem2.Size = New System.Drawing.Size(152, 26)
         Me.ProductoToolStripMenuItem2.Text = "Producto"
         '
         'BuscarToolStripMenuItem
@@ -137,19 +137,19 @@ Partial Class MenuPrincipal
         'UsuarioToolStripMenuItem2
         '
         Me.UsuarioToolStripMenuItem2.Name = "UsuarioToolStripMenuItem2"
-        Me.UsuarioToolStripMenuItem2.Size = New System.Drawing.Size(224, 26)
+        Me.UsuarioToolStripMenuItem2.Size = New System.Drawing.Size(152, 26)
         Me.UsuarioToolStripMenuItem2.Text = "Usuario"
         '
         'ClienteToolStripMenuItem2
         '
         Me.ClienteToolStripMenuItem2.Name = "ClienteToolStripMenuItem2"
-        Me.ClienteToolStripMenuItem2.Size = New System.Drawing.Size(224, 26)
+        Me.ClienteToolStripMenuItem2.Size = New System.Drawing.Size(152, 26)
         Me.ClienteToolStripMenuItem2.Text = "Cliente"
         '
         'ProductoToolStripMenuItem3
         '
         Me.ProductoToolStripMenuItem3.Name = "ProductoToolStripMenuItem3"
-        Me.ProductoToolStripMenuItem3.Size = New System.Drawing.Size(224, 26)
+        Me.ProductoToolStripMenuItem3.Size = New System.Drawing.Size(152, 26)
         Me.ProductoToolStripMenuItem3.Text = "Producto"
         '
         'CobrarToolStripMenuItem
@@ -187,6 +187,7 @@ Partial Class MenuPrincipal
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtBienvenida)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.IsMdiContainer = True
         Me.Name = "MenuPrincipal"
         Me.Text = "Menu Principal"
         Me.MenuStrip1.ResumeLayout(False)
