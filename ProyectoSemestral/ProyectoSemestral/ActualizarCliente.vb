@@ -1,16 +1,15 @@
 ﻿Imports System.Data.SqlClient
 Public Class ActualizarCliente
-    Dim nombre, apellido, cedula, email As String
+    Dim nombre, apellido, cedula As String
 
     Private Sub btnActualizar_Click(sender As Object, e As EventArgs) Handles btnActualizar.Click
         Dim glComand As New SqlCommand
         Dim dtOrdenes As New DataTable
         Dim SqlDa As SqlDataAdapter
-        Dim tipo As Integer
 
         glComand.Connection = mYConn
         glComand.CommandText = "SP_ActualizarCliente"
-        glComand.Parameters.AddWithValue("@idUsuario", txtId.Text)
+        glComand.Parameters.AddWithValue("@idCliente", txtId.Text)
         glComand.Parameters.AddWithValue("@nombreC", txtNombre.Text)
         glComand.Parameters.AddWithValue("@apellidoC", txtApellido.Text)
         glComand.Parameters.AddWithValue("@cedulaC", txtCedula.Text)
@@ -37,7 +36,6 @@ Public Class ActualizarCliente
         txtNombre.Text = nombre
         txtApellido.Text = apellido
         txtCedula.Text = cedula
-        txtEmail.Text = email
     End Sub
 
     Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
@@ -55,7 +53,6 @@ Public Class ActualizarCliente
         nombre = txtNombre.Text
         apellido = txtApellido.Text
         cedula = txtCedula.Text
-        email = txtEmail.Text
     End Sub
 
 

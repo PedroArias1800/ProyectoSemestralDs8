@@ -34,3 +34,5 @@ C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoS
 C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.RegistrarUsuario.resources
 C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.ActualizarCliente.resources
 C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.ActualizarProducto.resources
+C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.RegistrarProducto.resources
+C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.Bienvenida.resources

@@ -98,4 +98,10 @@ Public Class RegistrarUsuario
             MsgBox("Debe llenar todos los campos", vbYes, "Error")
         End If
     End Sub
+
+    Private Sub RegistrarUsuario_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Bienvenida.MdiParent = Me
+        Bienvenida.WindowState = FormWindowState.Maximized
+        Bienvenida.Show()
+    End Sub
 End Class

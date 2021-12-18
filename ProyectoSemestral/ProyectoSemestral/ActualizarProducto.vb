@@ -32,10 +32,10 @@ Public Class ActualizarProducto
 
         glComand.Connection = mYConn
         glComand.CommandText = "SP_ActualizarProducto"
-        glComand.Parameters.AddWithValue("@idUsuario", txtId.Text)
+        glComand.Parameters.AddWithValue("@idProducto", txtId.Text)
         glComand.Parameters.AddWithValue("@nombreP", txtNombre.Text)
         glComand.Parameters.AddWithValue("@precioP", txtPrecio.Text)
-        glComand.Parameters.AddWithValue("@cantidadU", txtCantidad.Text)
+        glComand.Parameters.AddWithValue("@cantidadP", txtCantidad.Text)
         glComand.CommandTimeout = 0
         glComand.CommandType = CommandType.StoredProcedure
 
@@ -57,7 +57,7 @@ Public Class ActualizarProducto
 
     Private Sub txtPrecio_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPrecio.KeyPress
         If Asc(e.KeyChar) <> 8 Then
-            If Asc(e.KeyChar) < 46 Or Asc(e.KeyChar) > 57 Then
+            If Asc(e.KeyChar) < 45 Or Asc(e.KeyChar) > 57 Then
                 e.Handled = True
             End If
         End If

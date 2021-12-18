@@ -68,4 +68,9 @@ Public Class RegistrarProducto
         End If
     End Sub
 
+    Private Sub RegistrarProducto_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Bienvenida.MdiParent = Me
+        Bienvenida.WindowState = FormWindowState.Maximized
+        Bienvenida.Show()
+    End Sub
 End Class

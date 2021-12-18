@@ -37,7 +37,9 @@ Public Class Login
                 idUsuario = Val(dtgIniciarSesion.Item(0, 0).Value)
                 nombreCompleto = dtgIniciarSesion(1, 0).Value.ToString & " " & dtgIniciarSesion(2, 0).Value.ToString
                 tipo = Val(dtgIniciarSesion.Item(3, 0).Value)
+                'MenuPrincipal.Refresh()
                 MenuPrincipal.Show()
+                'Bienvenida.Show()
                 Me.Hide()
             Else
                 MsgBox("Datos inválidos, inténtelo de nuevo", vbYes, "Error")

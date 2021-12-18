@@ -4,11 +4,13 @@
         tipo = 0
         Application.Exit()
     End Sub
+
+
     Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If tipo = 1 Then
-            txtBienvenida.Text = "Bienvenido Administrador " & nombreCompleto
+            Bienvenida.txtBienvenida.Text = "Bienvenido Administrador " & nombreCompleto
         ElseIf tipo = 2 Then
-            txtBienvenida.Text = "Bienvenido Cajero " & nombreCompleto
+            Bienvenida.txtBienvenida.Text = "Bienvenido Cajero " & nombreCompleto
             'Ocultando opciones de usuarios
             UsuarioToolStripMenuItem.Visible = False
             UsuarioToolStripMenuItem1.Visible = False
@@ -24,7 +26,7 @@
             EliminarToolStripMenuItem.Visible = False
 
         ElseIf tipo = 3 Then
-            txtBienvenida.Text = "Bienvenido Personal De Inventario " & nombreCompleto
+            Bienvenida.txtBienvenida.Text = "Bienvenido Personal De Inventario " & nombreCompleto
             'Ocultando opciones de usuarios
             UsuarioToolStripMenuItem.Visible = False
             UsuarioToolStripMenuItem1.Visible = False
@@ -45,8 +47,12 @@
             MsgBox("Vuelva a iniciar sesión nuevamente...", vbYes, "Ha ocurrido un error")
         End If
 
-        gbxInfo.Left = Me.Width / 2 - (gbxInfo.Width / 2)
-        gbxInfo.Visible = False
+        Bienvenida.horaSistema.Text = "Hora del sistema: " & Now
+        BienvenidaToolStripMenuItem.Visible = False
+        Bienvenida.MdiParent = Me
+        Bienvenida.WindowState = FormWindowState.Maximized
+        Bienvenida.Show()
+
     End Sub
 
     'Registrar Usuario
@@ -88,15 +94,6 @@
         Actualizar.Show()
     End Sub
 
-    'Cerrar la sesión
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        idUsuario = 0
-        tipo = 0
-        nombreCompleto = ""
-        Me.Hide()
-        Login.Show()
-    End Sub
-
     Private Sub ClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClienteToolStripMenuItem.Click
         RegistrarCliente.MdiParent = Me
         RegistrarCliente.WindowState = FormWindowState.Maximized
@@ -108,4 +105,5 @@
         'RegistrarProducto.WindowState = FormWindowState.Maximized
         'RegistrarProducto.Show()
     End Sub
+
 End Class

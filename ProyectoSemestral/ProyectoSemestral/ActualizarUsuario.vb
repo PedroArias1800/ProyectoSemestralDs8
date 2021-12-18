@@ -26,7 +26,7 @@ Public Class ActualizarUsuario
             tipo = 3
         End If
         glComand.Parameters.AddWithValue("@tipoCuentaU", tipo)
-        glComand.Parameters.AddWithValue("@intentoU", txtIntento.Text)
+        glComand.Parameters.AddWithValue("@intentoU", cboIntento.Text)
         glComand.CommandTimeout = 0
         glComand.CommandType = CommandType.StoredProcedure
 
@@ -52,7 +52,7 @@ Public Class ActualizarUsuario
         End If
     End Sub
 
-    Private Sub txtIntento_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtIntento.KeyPress
+    Private Sub txtIntento_KeyPress(sender As Object, e As KeyPressEventArgs)
         If Asc(e.KeyChar) <> 5 Then
             If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 51 Then
                 e.Handled = True
@@ -73,7 +73,6 @@ Public Class ActualizarUsuario
         cedula = txtCedula.Text
         email = txtEmail.Text
         password = txtPassword.Text
-        intento = Val(txtIntento.Text)
 
     End Sub
 
@@ -83,7 +82,7 @@ Public Class ActualizarUsuario
         txtCedula.Text = cedula
         txtEmail.Text = email
         txtPassword.Text = password
-        txtIntento.Text = intento
+
     End Sub
 
     Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click

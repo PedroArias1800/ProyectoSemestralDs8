@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MenuPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,10 @@ Partial Class MenuPrincipal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.txtBienvenida = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.BienvenidaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -39,32 +39,24 @@ Partial Class MenuPrincipal
         Me.ClienteToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductoToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.CobrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.gbxInfo = New System.Windows.Forms.GroupBox()
         Me.MenuStrip1.SuspendLayout()
-        Me.gbxInfo.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'txtBienvenida
-        '
-        Me.txtBienvenida.AutoSize = True
-        Me.txtBienvenida.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBienvenida.Location = New System.Drawing.Point(17, 89)
-        Me.txtBienvenida.Name = "txtBienvenida"
-        Me.txtBienvenida.Size = New System.Drawing.Size(155, 31)
-        Me.txtBienvenida.TabIndex = 0
-        Me.txtBienvenida.Text = "Bienvenido: "
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarToolStripMenuItem, Me.ActualizarToolStripMenuItem, Me.EliminarToolStripMenuItem, Me.BuscarToolStripMenuItem, Me.CobrarToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BienvenidaToolStripMenuItem, Me.RegistrarToolStripMenuItem, Me.ActualizarToolStripMenuItem, Me.EliminarToolStripMenuItem, Me.BuscarToolStripMenuItem, Me.CobrarToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1080, 28)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'BienvenidaToolStripMenuItem
+        '
+        Me.BienvenidaToolStripMenuItem.Name = "BienvenidaToolStripMenuItem"
+        Me.BienvenidaToolStripMenuItem.Size = New System.Drawing.Size(96, 24)
+        Me.BienvenidaToolStripMenuItem.Text = "Bienvenida"
         '
         'RegistrarToolStripMenuItem
         '
@@ -101,19 +93,19 @@ Partial Class MenuPrincipal
         'UsuarioToolStripMenuItem1
         '
         Me.UsuarioToolStripMenuItem1.Name = "UsuarioToolStripMenuItem1"
-        Me.UsuarioToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.UsuarioToolStripMenuItem1.Size = New System.Drawing.Size(152, 26)
         Me.UsuarioToolStripMenuItem1.Text = "Usuario"
         '
         'ClienteToolStripMenuItem1
         '
         Me.ClienteToolStripMenuItem1.Name = "ClienteToolStripMenuItem1"
-        Me.ClienteToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.ClienteToolStripMenuItem1.Size = New System.Drawing.Size(152, 26)
         Me.ClienteToolStripMenuItem1.Text = "Cliente"
         '
         'ProductoToolStripMenuItem1
         '
         Me.ProductoToolStripMenuItem1.Name = "ProductoToolStripMenuItem1"
-        Me.ProductoToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.ProductoToolStripMenuItem1.Size = New System.Drawing.Size(152, 26)
         Me.ProductoToolStripMenuItem1.Text = "Producto"
         '
         'EliminarToolStripMenuItem
@@ -160,57 +152,21 @@ Partial Class MenuPrincipal
         Me.CobrarToolStripMenuItem.Size = New System.Drawing.Size(68, 24)
         Me.CobrarToolStripMenuItem.Text = "Cobrar"
         '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(835, 23)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(182, 47)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Cerrar Sesión"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(15, 18)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(270, 44)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Menu Principal"
-        '
-        'gbxInfo
-        '
-        Me.gbxInfo.Controls.Add(Me.Label1)
-        Me.gbxInfo.Controls.Add(Me.Button1)
-        Me.gbxInfo.Controls.Add(Me.txtBienvenida)
-        Me.gbxInfo.Location = New System.Drawing.Point(17, 41)
-        Me.gbxInfo.Name = "gbxInfo"
-        Me.gbxInfo.Size = New System.Drawing.Size(1042, 299)
-        Me.gbxInfo.TabIndex = 5
-        Me.gbxInfo.TabStop = False
-        '
         'MenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1080, 701)
-        Me.Controls.Add(Me.gbxInfo)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.Name = "MenuPrincipal"
         Me.Text = "Menu Principal"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.gbxInfo.ResumeLayout(False)
-        Me.gbxInfo.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents txtBienvenida As Label
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents RegistrarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UsuarioToolStripMenuItem As ToolStripMenuItem
@@ -227,7 +183,5 @@ Partial Class MenuPrincipal
     Friend WithEvents ClienteToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents ProductoToolStripMenuItem3 As ToolStripMenuItem
     Friend WithEvents CobrarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents gbxInfo As GroupBox
+    Friend WithEvents BienvenidaToolStripMenuItem As ToolStripMenuItem
 End Class

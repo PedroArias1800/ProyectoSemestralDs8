@@ -25,6 +25,7 @@ Public Class Actualizar
         Dim glComand As New SqlCommand
         Dim dtOrdenes As New DataTable
         Dim SqlDa As SqlDataAdapter
+        Dim cantidad As Integer
 
         glComand.Connection = mYConn
         If accion = "U" Then
@@ -65,6 +66,7 @@ Public Class Actualizar
             nombreElegido = dtg1.Item(1, e.RowIndex).Value.ToString & " " & dtg1.Item(2, e.RowIndex).Value.ToString
             pregunta = MsgBox("¿Desea actualizar los datos del usuario " & nombreElegido & "?", vbYesNo)
             If pregunta = vbYes Then
+                ActualizarUsuario.Close()
                 ActualizarUsuario.MdiParent = MenuPrincipal
                 ActualizarUsuario.WindowState = FormWindowState.Maximized
                 ActualizarUsuario.txtNombreCompleto.Text = "Usuario Seleccionado: " & dtg1.Item(1, e.RowIndex).Value.ToString & " " & dtg1.Item(2, e.RowIndex).Value.ToString
@@ -81,14 +83,29 @@ Public Class Actualizar
 
                 If Val(dtg1.Item(6, e.RowIndex).Value) = 1 Then
                     ActualizarUsuario.cboTipo.SelectedIndex = 0
-
                 ElseIf Val(dtg1.Item(6, e.RowIndex).Value) = 2 Then
                     ActualizarUsuario.cboTipo.SelectedIndex = 1
+
                 Else
                     ActualizarUsuario.cboTipo.SelectedIndex = 2
+                End If
+
+                ActualizarUsuario.cboIntento.Items.Add(0)
+                ActualizarUsuario.cboIntento.Items.Add(1)
+                ActualizarUsuario.cboIntento.Items.Add(2)
+                ActualizarUsuario.cboIntento.Items.Add(3)
+
+                If Val(dtg1.Item(7, e.RowIndex).Value) = 0 Then
+                    ActualizarUsuario.cboIntento.SelectedIndex = 0
+                ElseIf Val(dtg1.Item(7, e.RowIndex).Value) = 1 Then
+                    ActualizarUsuario.cboIntento.SelectedIndex = 1
+                ElseIf Val(dtg1.Item(7, e.RowIndex).Value) = 2 Then
+                    ActualizarUsuario.cboIntento.SelectedIndex = 2
+                Else
+                    ActualizarUsuario.cboIntento.SelectedIndex = 3
 
                 End If
-                ActualizarUsuario.txtIntento.Text = dtg1.Item(7, e.RowIndex).Value.ToString
+
                 ActualizarUsuario.Show()
 
             End If
@@ -96,6 +113,7 @@ Public Class Actualizar
             nombreElegido = dtg1.Item(1, e.RowIndex).Value.ToString & " " & dtg1.Item(2, e.RowIndex).Value.ToString
             pregunta = MsgBox("¿Desea actualizar los datos del cliente " & nombreElegido & "?", vbYesNo)
             If pregunta = vbYes Then
+                ActualizarCliente.Close()
                 ActualizarCliente.txtId.Text = dtg1.Item(0, e.RowIndex).Value.ToString
                 ActualizarCliente.txtNombre.Text = dtg1.Item(1, e.RowIndex).Value.ToString
                 ActualizarCliente.txtApellido.Text = dtg1.Item(2, e.RowIndex).Value.ToString
@@ -111,6 +129,7 @@ Public Class Actualizar
             nombreElegido = dtg1.Item(1, e.RowIndex).Value.ToString
             pregunta = MsgBox("¿Desea actualizar los datos del producto " & nombreElegido & "?", vbYesNo)
             If pregunta = vbYes Then
+                ActualizarProducto.Close()
                 ActualizarProducto.txtId.Text = dtg1.Item(0, e.RowIndex).Value.ToString
                 ActualizarProducto.txtNombre.Text = dtg1.Item(1, e.RowIndex).Value.ToString
                 ActualizarProducto.txtPrecio.Text = dtg1.Item(2, e.RowIndex).Value.ToString
@@ -122,5 +141,11 @@ Public Class Actualizar
 
             End If
         End If
+    End Sub
+
+    Private Sub Actualizar_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Bienvenida.MdiParent = MenuPrincipal
+        Bienvenida.WindowState = FormWindowState.Maximized
+        Bienvenida.Show()
     End Sub
 End Class
