@@ -12,6 +12,10 @@ Public Class Actualizar
         ElseIf accion = "P" Then
             Label1.Text = "Actualizar Productos"
             Label2.Text = "Seleccione un producto de la lista"
+        ElseIf accion = "E" Then
+            Label1.Text = "Eliminar Productos"
+            Label2.Text = "Seleccione un producto de la lista"
+
         Else
             MsgBox("Ha ocurrido un error inesperado...", vbYes, "Error")
             MenuPrincipal.Show()
@@ -33,6 +37,10 @@ Public Class Actualizar
             glComand.CommandText = "SP_BuscarCliente"
         ElseIf accion = "P" Then
             glComand.CommandText = "SP_BuscarProductos"
+
+        ElseIf accion = "E" Then
+            glComand.CommandText = "SP_BuscarProductos"
+
         End If
         glComand.CommandTimeout = 0
         glComand.CommandType = CommandType.StoredProcedure
@@ -42,8 +50,17 @@ Public Class Actualizar
             glComand.ExecuteNonQuery()
             SqlDa = New SqlDataAdapter(glComand)
             SqlDa.Fill(dtOrdenes)
+
             If dtOrdenes.Rows.Count <> 0 Then
                 dtg1.DataSource = dtOrdenes
+
+                If accion = "P" Or accion = "E" Then
+                    For x = 0 To dtOrdenes.Rows.Count - 1
+                        dtg1.Item(2, x).Value = FormatNumber(CDbl(dtg1.Item(2, x).Value), 2)
+                    Next
+
+
+                End If
             Else
                 Label2.Text = "No hay datos para desplegar"
             End If
@@ -121,6 +138,43 @@ Public Class Actualizar
                 ActualizarProducto.Show()
 
             End If
+
+
+        ElseIf accion = "E" Then
+            nombreElegido = dtg1.Item(1, e.RowIndex).Value.ToString
+            pregunta = MsgBox("¿Desea eliminar el producto " & nombreElegido & "?", vbYesNo)
+            If pregunta = vbYes Then
+                Dim glComand As New SqlCommand
+                Dim dtOrdenes As New DataTable
+                Dim SqlDa As SqlDataAdapter
+
+
+                glComand.Connection = mYConn
+                glComand.CommandText = "SP_EliminarProducto"
+                glComand.Parameters.AddWithValue("@idProducto", dtg1.Item(0, e.RowIndex).Value.ToString)
+                glComand.CommandTimeout = 0
+                glComand.CommandType = CommandType.StoredProcedure
+
+                Try
+                    mYConn.Open()
+                    glComand.ExecuteNonQuery()
+                    SqlDa = New SqlDataAdapter(glComand)
+                    SqlDa.Fill(dtOrdenes)
+                    MsgBox("¡Producto Eliminado Exitosamente!", vbYes, "Éxito")
+                    Me.Hide()
+
+
+
+                Catch ex As Exception
+                    MsgBox("Hubo un error... inténtelo de nuevo", vbYes, "Error")
+                Finally
+                    If mYConn.State <> ConnectionState.Closed Then
+                        mYConn.Close()
+                    End If
+                End Try
+
+            End If
+
         End If
     End Sub
 End Class

@@ -59,7 +59,7 @@ Partial Class MenuPrincipal
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarToolStripMenuItem, Me.ActualizarToolStripMenuItem, Me.EliminarToolStripMenuItem, Me.BuscarToolStripMenuItem, Me.CobrarToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarToolStripMenuItem, Me.EliminarToolStripMenuItem, Me.ActualizarToolStripMenuItem, Me.BuscarToolStripMenuItem, Me.CobrarToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1080, 28)
@@ -101,19 +101,19 @@ Partial Class MenuPrincipal
         'UsuarioToolStripMenuItem1
         '
         Me.UsuarioToolStripMenuItem1.Name = "UsuarioToolStripMenuItem1"
-        Me.UsuarioToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.UsuarioToolStripMenuItem1.Size = New System.Drawing.Size(152, 26)
         Me.UsuarioToolStripMenuItem1.Text = "Usuario"
         '
         'ClienteToolStripMenuItem1
         '
         Me.ClienteToolStripMenuItem1.Name = "ClienteToolStripMenuItem1"
-        Me.ClienteToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.ClienteToolStripMenuItem1.Size = New System.Drawing.Size(152, 26)
         Me.ClienteToolStripMenuItem1.Text = "Cliente"
         '
         'ProductoToolStripMenuItem1
         '
         Me.ProductoToolStripMenuItem1.Name = "ProductoToolStripMenuItem1"
-        Me.ProductoToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.ProductoToolStripMenuItem1.Size = New System.Drawing.Size(152, 26)
         Me.ProductoToolStripMenuItem1.Text = "Producto"
         '
         'EliminarToolStripMenuItem
@@ -126,7 +126,7 @@ Partial Class MenuPrincipal
         'ProductoToolStripMenuItem2
         '
         Me.ProductoToolStripMenuItem2.Name = "ProductoToolStripMenuItem2"
-        Me.ProductoToolStripMenuItem2.Size = New System.Drawing.Size(152, 26)
+        Me.ProductoToolStripMenuItem2.Size = New System.Drawing.Size(224, 26)
         Me.ProductoToolStripMenuItem2.Text = "Producto"
         '
         'BuscarToolStripMenuItem

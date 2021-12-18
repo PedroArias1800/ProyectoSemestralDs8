@@ -56,7 +56,7 @@ Public Class ActualizarUsuario
         If Asc(e.KeyChar) <> 5 Then
             If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 51 Then
                 e.Handled = True
-            ElseIf Asc(e.KeyChar) = 127 Then
+            ElseIf Asc(e.KeyChar) = Keys.Back Then
                 e.Handled = True
             End If
         End If
