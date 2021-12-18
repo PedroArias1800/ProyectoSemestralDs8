@@ -5,6 +5,7 @@ Public Class Login
         btnIniciarSesion.Left = Me.Width / 2 - (btnIniciarSesion.Width / 2)
         Label1.Left = Me.Width / 2 - (Label1.Width / 2)
         GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
+
         tipo = 0
         txtEmail.Text = ""
         txtPassword.Text = ""
