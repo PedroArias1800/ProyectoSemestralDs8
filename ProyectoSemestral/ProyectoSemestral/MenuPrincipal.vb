@@ -5,6 +5,7 @@
         Application.Exit()
     End Sub
     Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         If tipo = 1 Then
             txtBienvenida.Text = "Bienvenido Administrador " & nombreCompleto
         ElseIf tipo = 2 Then
@@ -48,7 +49,9 @@
 
     'Registrar Usuario
     Private Sub UsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuarioToolStripMenuItem.Click
-
+        RegistrarUsuario.MdiParent = Me
+        RegistrarUsuario.WindowState = FormWindowState.Maximized
+        RegistrarUsuario.Show()
     End Sub
 
     'Actualizar Usuario
@@ -70,4 +73,15 @@
         Login.Show()
     End Sub
 
+    Private Sub ClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClienteToolStripMenuItem.Click
+        RegistrarCliente.MdiParent = Me
+        RegistrarCliente.WindowState = FormWindowState.Maximized
+        RegistrarCliente.Show()
+    End Sub
+
+    Private Sub ProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProductoToolStripMenuItem.Click
+        RegistrarProducto.MdiParent = Me
+        RegistrarProducto.WindowState = FormWindowState.Maximized
+        RegistrarProducto.Show()
+    End Sub
 End Class
