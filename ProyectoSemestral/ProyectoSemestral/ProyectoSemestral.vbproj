@@ -73,6 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actualizar.Designer.vb">
+      <DependentUpon>Actualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarUsuario.Designer.vb">
+      <DependentUpon>ActualizarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +140,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Actualizar.resx">
+      <DependentUpon>Actualizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarUsuario.resx">
+      <DependentUpon>ActualizarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
