@@ -5,7 +5,6 @@
         Application.Exit()
     End Sub
     Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         If tipo = 1 Then
             txtBienvenida.Text = "Bienvenido Administrador " & nombreCompleto
         ElseIf tipo = 2 Then
@@ -45,6 +44,8 @@
             idUsuario = 0
             MsgBox("Vuelva a iniciar sesión nuevamente...", vbYes, "Ha ocurrido un error")
         End If
+
+        gbxInfo.Left = Me.Width / 2 - (gbxInfo.Width / 2)
     End Sub
 
     'Registrar Usuario
@@ -102,8 +103,8 @@
     End Sub
 
     Private Sub ProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProductoToolStripMenuItem.Click
-        RegistrarProducto.MdiParent = Me
-        RegistrarProducto.WindowState = FormWindowState.Maximized
-        RegistrarProducto.Show()
+        'RegistrarProducto.MdiParent = Me
+        'RegistrarProducto.WindowState = FormWindowState.Maximized
+        'RegistrarProducto.Show()
     End Sub
 End Class
