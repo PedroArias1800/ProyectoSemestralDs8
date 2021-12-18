@@ -62,7 +62,7 @@ Partial Class MenuPrincipal
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarToolStripMenuItem, Me.ActualizarToolStripMenuItem, Me.EliminarToolStripMenuItem, Me.BuscarToolStripMenuItem, Me.CobrarToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1080, 30)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1080, 28)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -70,7 +70,7 @@ Partial Class MenuPrincipal
         '
         Me.RegistrarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuarioToolStripMenuItem, Me.ClienteToolStripMenuItem, Me.ProductoToolStripMenuItem})
         Me.RegistrarToolStripMenuItem.Name = "RegistrarToolStripMenuItem"
-        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(82, 26)
+        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(82, 24)
         Me.RegistrarToolStripMenuItem.Text = "Registrar"
         '
         'UsuarioToolStripMenuItem
@@ -95,32 +95,32 @@ Partial Class MenuPrincipal
         '
         Me.ActualizarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuarioToolStripMenuItem1, Me.ClienteToolStripMenuItem1, Me.ProductoToolStripMenuItem1})
         Me.ActualizarToolStripMenuItem.Name = "ActualizarToolStripMenuItem"
-        Me.ActualizarToolStripMenuItem.Size = New System.Drawing.Size(89, 26)
+        Me.ActualizarToolStripMenuItem.Size = New System.Drawing.Size(89, 24)
         Me.ActualizarToolStripMenuItem.Text = "Actualizar"
         '
         'UsuarioToolStripMenuItem1
         '
         Me.UsuarioToolStripMenuItem1.Name = "UsuarioToolStripMenuItem1"
-        Me.UsuarioToolStripMenuItem1.Size = New System.Drawing.Size(152, 26)
+        Me.UsuarioToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
         Me.UsuarioToolStripMenuItem1.Text = "Usuario"
         '
         'ClienteToolStripMenuItem1
         '
         Me.ClienteToolStripMenuItem1.Name = "ClienteToolStripMenuItem1"
-        Me.ClienteToolStripMenuItem1.Size = New System.Drawing.Size(152, 26)
+        Me.ClienteToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
         Me.ClienteToolStripMenuItem1.Text = "Cliente"
         '
         'ProductoToolStripMenuItem1
         '
         Me.ProductoToolStripMenuItem1.Name = "ProductoToolStripMenuItem1"
-        Me.ProductoToolStripMenuItem1.Size = New System.Drawing.Size(152, 26)
+        Me.ProductoToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
         Me.ProductoToolStripMenuItem1.Text = "Producto"
         '
         'EliminarToolStripMenuItem
         '
         Me.EliminarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductoToolStripMenuItem2})
         Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(77, 26)
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(77, 24)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
         'ProductoToolStripMenuItem2
@@ -133,7 +133,7 @@ Partial Class MenuPrincipal
         '
         Me.BuscarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuarioToolStripMenuItem2, Me.ClienteToolStripMenuItem2, Me.ProductoToolStripMenuItem3})
         Me.BuscarToolStripMenuItem.Name = "BuscarToolStripMenuItem"
-        Me.BuscarToolStripMenuItem.Size = New System.Drawing.Size(66, 26)
+        Me.BuscarToolStripMenuItem.Size = New System.Drawing.Size(66, 24)
         Me.BuscarToolStripMenuItem.Text = "Buscar"
         '
         'UsuarioToolStripMenuItem2
@@ -157,7 +157,7 @@ Partial Class MenuPrincipal
         'CobrarToolStripMenuItem
         '
         Me.CobrarToolStripMenuItem.Name = "CobrarToolStripMenuItem"
-        Me.CobrarToolStripMenuItem.Size = New System.Drawing.Size(68, 26)
+        Me.CobrarToolStripMenuItem.Size = New System.Drawing.Size(68, 24)
         Me.CobrarToolStripMenuItem.Text = "Cobrar"
         '
         'Button1
@@ -195,9 +195,10 @@ Partial Class MenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1080, 499)
+        Me.ClientSize = New System.Drawing.Size(1080, 701)
         Me.Controls.Add(Me.gbxInfo)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.IsMdiContainer = True
         Me.Name = "MenuPrincipal"
         Me.Text = "Menu Principal"
         Me.MenuStrip1.ResumeLayout(False)

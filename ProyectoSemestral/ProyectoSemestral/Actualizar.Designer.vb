@@ -36,7 +36,7 @@ Partial Class Actualizar
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Location = New System.Drawing.Point(39, 95)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(817, 382)
+        Me.GroupBox1.Size = New System.Drawing.Size(1031, 466)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         '
@@ -44,13 +44,17 @@ Partial Class Actualizar
         '
         Me.dtg1.AllowUserToAddRows = False
         Me.dtg1.AllowUserToDeleteRows = False
+        Me.dtg1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dtg1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dtg1.BackgroundColor = System.Drawing.Color.LightCoral
         Me.dtg1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtg1.Location = New System.Drawing.Point(18, 72)
+        Me.dtg1.GridColor = System.Drawing.Color.Maroon
+        Me.dtg1.Location = New System.Drawing.Point(22, 72)
         Me.dtg1.Name = "dtg1"
         Me.dtg1.ReadOnly = True
         Me.dtg1.RowHeadersWidth = 51
         Me.dtg1.RowTemplate.Height = 24
-        Me.dtg1.Size = New System.Drawing.Size(783, 294)
+        Me.dtg1.Size = New System.Drawing.Size(990, 370)
         Me.dtg1.TabIndex = 2
         '
         'Label2
@@ -59,17 +63,17 @@ Partial Class Actualizar
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(11, 21)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(161, 36)
+        Me.Label2.Size = New System.Drawing.Size(436, 36)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Instrucción"
+        Me.Label2.Text = "Seleccione un usuario de la lista"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(366, 24)
+        Me.Label1.Location = New System.Drawing.Point(467, 27)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(191, 45)
+        Me.Label1.Size = New System.Drawing.Size(186, 44)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Actualizar"
         '
@@ -77,7 +81,7 @@ Partial Class Actualizar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(918, 596)
+        Me.ClientSize = New System.Drawing.Size(1112, 593)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Actualizar"

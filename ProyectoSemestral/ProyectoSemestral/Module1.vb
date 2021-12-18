@@ -6,7 +6,6 @@ Module Module1
     Public tipo As Integer
     Public idUsuario As Integer
     Public nombreCompleto As String
-    Public mostrar As String
 
     Sub conexion()
         Dim cadenadeconexion As String

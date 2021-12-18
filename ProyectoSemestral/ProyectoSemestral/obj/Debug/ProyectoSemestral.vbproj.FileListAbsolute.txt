@@ -32,3 +32,5 @@ C:\Users\jrica\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoS
 C:\Users\jrica\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.RegistrarCliente.resources
 C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.RegistrarCliente.resources
 C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.RegistrarUsuario.resources
+C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.ActualizarCliente.resources
+C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.ActualizarProducto.resources

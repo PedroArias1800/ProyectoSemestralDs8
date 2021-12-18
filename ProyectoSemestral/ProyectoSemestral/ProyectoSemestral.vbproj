@@ -79,6 +79,18 @@
     <Compile Include="Actualizar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ActualizarCliente.Designer.vb">
+      <DependentUpon>ActualizarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarProducto.Designer.vb">
+      <DependentUpon>ActualizarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ActualizarUsuario.Designer.vb">
       <DependentUpon>ActualizarUsuario.vb</DependentUpon>
     </Compile>
@@ -136,6 +148,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Actualizar.resx">
       <DependentUpon>Actualizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarCliente.resx">
+      <DependentUpon>ActualizarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarProducto.resx">
+      <DependentUpon>ActualizarProducto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ActualizarUsuario.resx">
       <DependentUpon>ActualizarUsuario.vb</DependentUpon>

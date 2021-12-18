@@ -1,5 +1,4 @@
 ﻿Imports System.Data.SqlClient
-
 Public Class Login
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnIniciarSesion.Left = Me.Width / 2 - (btnIniciarSesion.Width / 2)

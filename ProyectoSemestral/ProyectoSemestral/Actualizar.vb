@@ -1,4 +1,6 @@
-﻿Public Class Actualizar
+﻿Imports System.Data.SqlClient
+
+Public Class Actualizar
     Private Sub Actualizar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Escribiendo textos
         If accion = "U" Then
@@ -18,11 +20,107 @@
 
         'Centrando elementos
         Label1.Left = Me.Width / 2 - (Label1.Width / 2)
-        Label2.Left = Me.Width / 2 - (Label2.Width / 2)
         GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
+
+        Dim glComand As New SqlCommand
+        Dim dtOrdenes As New DataTable
+        Dim SqlDa As SqlDataAdapter
+
+        glComand.Connection = mYConn
+        If accion = "U" Then
+            glComand.CommandText = "SP_BuscarUsuario"
+        ElseIf accion = "C" Then
+            glComand.CommandText = "SP_BuscarCliente"
+        ElseIf accion = "P" Then
+            glComand.CommandText = "SP_BuscarProductos"
+        End If
+        glComand.CommandTimeout = 0
+        glComand.CommandType = CommandType.StoredProcedure
+
+        Try
+            mYConn.Open()
+            glComand.ExecuteNonQuery()
+            SqlDa = New SqlDataAdapter(glComand)
+            SqlDa.Fill(dtOrdenes)
+            If dtOrdenes.Rows.Count <> 0 Then
+                dtg1.DataSource = dtOrdenes
+            Else
+                Label2.Text = "No hay datos para desplegar"
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            If mYConn.State <> ConnectionState.Closed Then
+                mYConn.Close()
+            End If
+        End Try
+
     End Sub
 
-    Private Sub Actualizar_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        mostrar = "Si"
+    Private Sub dtg1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtg1.CellClick
+        Dim pregunta As String
+        Dim nombreElegido As String
+        If accion = "U" Then
+            nombreElegido = dtg1.Item(1, e.RowIndex).Value.ToString & " " & dtg1.Item(2, e.RowIndex).Value.ToString
+            pregunta = MsgBox("¿Desea actualizar los datos del usuario " & nombreElegido & "?", vbYesNo)
+            If pregunta = vbYes Then
+                ActualizarUsuario.MdiParent = MenuPrincipal
+                ActualizarUsuario.WindowState = FormWindowState.Maximized
+                ActualizarUsuario.txtNombreCompleto.Text = "Usuario Seleccionado: " & dtg1.Item(1, e.RowIndex).Value.ToString & " " & dtg1.Item(2, e.RowIndex).Value.ToString
+                ActualizarUsuario.txtId.Text = dtg1.Item(0, e.RowIndex).Value.ToString
+                ActualizarUsuario.txtNombre.Text = dtg1.Item(1, e.RowIndex).Value.ToString
+                ActualizarUsuario.txtApellido.Text = dtg1.Item(2, e.RowIndex).Value.ToString
+                ActualizarUsuario.txtCedula.Text = dtg1.Item(3, e.RowIndex).Value.ToString
+                ActualizarUsuario.txtEmail.Text = dtg1.Item(4, e.RowIndex).Value.ToString
+                ActualizarUsuario.txtPassword.Text = dtg1.Item(5, e.RowIndex).Value.ToString
+
+                ActualizarUsuario.cboTipo.Items.Add("Administrador")
+                ActualizarUsuario.cboTipo.Items.Add("Cajero")
+                ActualizarUsuario.cboTipo.Items.Add("Personal De Inventario")
+
+                If Val(dtg1.Item(6, e.RowIndex).Value) = 1 Then
+                    ActualizarUsuario.cboTipo.SelectedIndex = 0
+
+                ElseIf Val(dtg1.Item(6, e.RowIndex).Value) = 2 Then
+                    ActualizarUsuario.cboTipo.SelectedIndex = 1
+                Else
+                    ActualizarUsuario.cboTipo.SelectedIndex = 2
+
+                End If
+                ActualizarUsuario.txtIntento.Text = dtg1.Item(7, e.RowIndex).Value.ToString
+                ActualizarUsuario.Show()
+
+            End If
+        ElseIf accion = "C" Then
+            nombreElegido = dtg1.Item(1, e.RowIndex).Value.ToString & " " & dtg1.Item(2, e.RowIndex).Value.ToString
+            pregunta = MsgBox("¿Desea actualizar los datos del cliente " & nombreElegido & "?", vbYesNo)
+            If pregunta = vbYes Then
+                ActualizarCliente.txtId.Text = dtg1.Item(0, e.RowIndex).Value.ToString
+                ActualizarCliente.txtNombre.Text = dtg1.Item(1, e.RowIndex).Value.ToString
+                ActualizarCliente.txtApellido.Text = dtg1.Item(2, e.RowIndex).Value.ToString
+                ActualizarCliente.txtCedula.Text = dtg1.Item(3, e.RowIndex).Value.ToString
+                ActualizarCliente.MdiParent = MenuPrincipal
+                ActualizarCliente.WindowState = FormWindowState.Maximized
+                ActualizarCliente.txtNombreCompleto.Text = "Cliente Seleccionado: " & dtg1.Item(1, e.RowIndex).Value.ToString & " " & dtg1.Item(2, e.RowIndex).Value.ToString
+                ActualizarCliente.Show()
+
+            End If
+
+        ElseIf accion = "P" Then
+            nombreElegido = dtg1.Item(1, e.RowIndex).Value.ToString
+            pregunta = MsgBox("¿Desea actualizar los datos del producto " & nombreElegido & "?", vbYesNo)
+            If pregunta = vbYes Then
+                ActualizarProducto.txtId.Text = dtg1.Item(0, e.RowIndex).Value.ToString
+                ActualizarProducto.txtNombre.Text = dtg1.Item(1, e.RowIndex).Value.ToString
+                ActualizarProducto.txtPrecio.Text = dtg1.Item(2, e.RowIndex).Value.ToString
+                ActualizarProducto.txtCantidad.Text = dtg1.Item(3, e.RowIndex).Value.ToString
+                ActualizarProducto.MdiParent = MenuPrincipal
+                ActualizarProducto.WindowState = FormWindowState.Maximized
+                ActualizarProducto.txtNombreCompleto.Text = "Producto Seleccionado: " & dtg1.Item(1, e.RowIndex).Value.ToString
+                ActualizarProducto.Show()
+
+            End If
+        End If
     End Sub
 End Class

@@ -46,6 +46,7 @@
         End If
 
         gbxInfo.Left = Me.Width / 2 - (gbxInfo.Width / 2)
+        gbxInfo.Visible = False
     End Sub
 
     'Registrar Usuario
