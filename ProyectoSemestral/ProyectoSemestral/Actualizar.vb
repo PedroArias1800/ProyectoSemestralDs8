@@ -9,6 +9,9 @@ Public Class Actualizar
         ElseIf accion = "C" Then
             Label1.Text = "Actualizar Clientes"
             Label2.Text = "Seleccione un cliente de la lista"
+        ElseIf accion = "CC" Then
+            Label1.Text = "Cobrar"
+            Label2.Text = "Seleccione un cliente de la lista"
         ElseIf accion = "P" Then
             Label1.Text = "Actualizar Productos"
             Label2.Text = "Seleccione un producto de la lista"
@@ -34,7 +37,7 @@ Public Class Actualizar
         glComand.Connection = mYConn
         If accion = "U" Then
             glComand.CommandText = "SP_BuscarUsuario"
-        ElseIf accion = "C" Then
+        ElseIf accion = "C" Or accion = "CC" Then
             glComand.CommandText = "SP_BuscarCliente"
         ElseIf accion = "P" Then
             glComand.CommandText = "SP_BuscarProductos"
@@ -126,6 +129,7 @@ Public Class Actualizar
                 ActualizarUsuario.Show()
 
             End If
+
         ElseIf accion = "C" Then
             nombreElegido = dtg1.Item(1, e.RowIndex).Value.ToString & " " & dtg1.Item(2, e.RowIndex).Value.ToString
             pregunta = MsgBox("¿Desea actualizar los datos del cliente " & nombreElegido & "?", vbYesNo)
@@ -139,6 +143,21 @@ Public Class Actualizar
                 ActualizarCliente.WindowState = FormWindowState.Maximized
                 ActualizarCliente.txtNombreCompleto.Text = "Cliente Seleccionado: " & dtg1.Item(1, e.RowIndex).Value.ToString & " " & dtg1.Item(2, e.RowIndex).Value.ToString
                 ActualizarCliente.Show()
+
+            End If
+
+        ElseIf accion = "CC" Then
+            nombreElegido = dtg1.Item(1, e.RowIndex).Value.ToString & " " & dtg1.Item(2, e.RowIndex).Value.ToString
+            pregunta = MsgBox("¿Desea cobrar al cliente " & nombreElegido & "?", vbYesNo)
+            If pregunta = vbYes Then
+                Cobrar.Close()
+                Cobrar.txtId.Text = dtg1.Item(0, e.RowIndex).Value.ToString
+                Cobrar.MdiParent = MenuPrincipal
+                Cobrar.WindowState = FormWindowState.Maximized
+                Cobrar.txtNombreCompleto.Text = "Cliente Seleccionado: " & dtg1.Item(1, e.RowIndex).Value.ToString & " " &
+                    dtg1.Item(2, e.RowIndex).Value.ToString '& " " &
+                'dtg1.Item(3, e.RowIndex).Value.ToString
+                Cobrar.Show()
 
             End If
 

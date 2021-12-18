@@ -103,6 +103,12 @@
     <Compile Include="Bienvenida.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Cobrar.Designer.vb">
+      <DependentUpon>Cobrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cobrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bienvenida.resx">
       <DependentUpon>Bienvenida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cobrar.resx">
+      <DependentUpon>Cobrar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
