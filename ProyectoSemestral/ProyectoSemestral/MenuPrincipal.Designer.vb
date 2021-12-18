@@ -118,7 +118,7 @@ Partial Class MenuPrincipal
         'ProductoToolStripMenuItem2
         '
         Me.ProductoToolStripMenuItem2.Name = "ProductoToolStripMenuItem2"
-        Me.ProductoToolStripMenuItem2.Size = New System.Drawing.Size(152, 26)
+        Me.ProductoToolStripMenuItem2.Size = New System.Drawing.Size(224, 26)
         Me.ProductoToolStripMenuItem2.Text = "Producto"
         '
         'BuscarToolStripMenuItem

@@ -106,4 +106,11 @@
         'RegistrarProducto.Show()
     End Sub
 
+    Private Sub ProductoToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ProductoToolStripMenuItem2.Click
+        accion = "E"
+        Actualizar.Close()
+        Actualizar.MdiParent = Me
+        Actualizar.WindowState = FormWindowState.Maximized
+        Actualizar.Show()
+    End Sub
 End Class
