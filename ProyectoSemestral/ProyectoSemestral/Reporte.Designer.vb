@@ -22,8 +22,8 @@ Partial Class Reporte
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.dtg1 = New System.Windows.Forms.DataGridView()
         Me.txtTotal = New System.Windows.Forms.Label()
@@ -34,11 +34,14 @@ Partial Class Reporte
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.dtg1)
         Me.GroupBox1.Controls.Add(Me.txtTotal)
-        Me.GroupBox1.Location = New System.Drawing.Point(41, 97)
+        Me.GroupBox1.Location = New System.Drawing.Point(31, 11)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1031, 466)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(773, 447)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
         '
@@ -52,41 +55,43 @@ Partial Class Reporte
         Me.dtg1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dtg1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
         Me.dtg1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.Maroon
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Brown
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtg1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Brown
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtg1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.dtg1.ColumnHeadersHeight = 30
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Firebrick
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dtg1.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Firebrick
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dtg1.DefaultCellStyle = DataGridViewCellStyle6
         Me.dtg1.EnableHeadersVisualStyles = False
         Me.dtg1.GridColor = System.Drawing.Color.Firebrick
-        Me.dtg1.Location = New System.Drawing.Point(22, 21)
+        Me.dtg1.Location = New System.Drawing.Point(16, 69)
+        Me.dtg1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dtg1.Name = "dtg1"
         Me.dtg1.ReadOnly = True
         Me.dtg1.RowHeadersVisible = False
         Me.dtg1.RowHeadersWidth = 51
         Me.dtg1.RowTemplate.Height = 24
-        Me.dtg1.Size = New System.Drawing.Size(990, 370)
+        Me.dtg1.Size = New System.Drawing.Size(742, 323)
         Me.dtg1.TabIndex = 2
         '
         'txtTotal
         '
         Me.txtTotal.AutoSize = True
         Me.txtTotal.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTotal.Location = New System.Drawing.Point(16, 408)
+        Me.txtTotal.Location = New System.Drawing.Point(12, 406)
+        Me.txtTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.txtTotal.Name = "txtTotal"
-        Me.txtTotal.Size = New System.Drawing.Size(427, 36)
+        Me.txtTotal.Size = New System.Drawing.Size(336, 30)
         Me.txtTotal.TabIndex = 1
         Me.txtTotal.Text = "Total De Ingreso Generado: B/."
         '
@@ -94,26 +99,28 @@ Partial Class Reporte
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(469, 29)
+        Me.Label1.Location = New System.Drawing.Point(318, 15)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(169, 44)
+        Me.Label1.Size = New System.Drawing.Size(156, 36)
         Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Reportes"
+        Me.Label1.Text = "REPORTES"
         '
         'Reporte
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1112, 593)
+        Me.BackgroundImage = Global.ProyectoSemestral.My.Resources.Resources.reporte_fondo
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(834, 482)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Reporte"
         Me.Text = "Reportes"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.dtg1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
