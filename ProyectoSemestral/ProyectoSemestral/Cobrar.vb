@@ -85,6 +85,7 @@ Public Class Cobrar
                 'dtg1.Rows.Clear()
                 'dtg1.Columns.Clear()
                 cboProductos.SelectedIndex = 0
+                PictureBox1.Image = Image.FromFile("..\..\Productos\Producto.jpg")
 
             Catch ex As Exception
                 MessageBox.Show(ex.Message)

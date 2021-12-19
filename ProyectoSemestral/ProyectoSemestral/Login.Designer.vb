@@ -30,6 +30,7 @@ Partial Class Login
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.btnIniciarSesion = New System.Windows.Forms.Button()
         Me.dtgIniciarSesion = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dtgIniciarSesion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -128,6 +129,19 @@ Partial Class Login
         Me.dtgIniciarSesion.Size = New System.Drawing.Size(8, 15)
         Me.dtgIniciarSesion.TabIndex = 5
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(300, 372)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(256, 53)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "Recuperar Contraseña"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -135,6 +149,7 @@ Partial Class Login
         Me.BackgroundImage = Global.ProyectoSemestral.My.Resources.Resources.login_fondo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(600, 366)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.dtgIniciarSesion)
         Me.Controls.Add(Me.GroupBox1)
         Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
@@ -156,4 +171,5 @@ Partial Class Login
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents btnIniciarSesion As Button
     Friend WithEvents dtgIniciarSesion As DataGridView
+    Friend WithEvents Button1 As Button
 End Class
