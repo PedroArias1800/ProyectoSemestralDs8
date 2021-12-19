@@ -5,7 +5,12 @@ Public Class RegistrarUsuario
     Private Sub RegistrarUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnRegistrarUsuario.Left = Me.Width / 2 - (btnRegistrarUsuario.Width / 2)
         Label1.Left = Me.Width / 2 - (Label1.Width / 2)
+
         GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
+        GroupBox1.Top = Me.Height / 2 - (GroupBox1.Height / 2)
+        Label1.Left = GroupBox1.Width / 2 - (Label1.Width / 2)
+
+        GroupBox1.BackColor = Color.FromArgb(230, 169, 169, 169)
 
         cboTipoCuenta.Items.Add("Seleccione un tipo")
         cboTipoCuenta.Items.Add("Administrador")

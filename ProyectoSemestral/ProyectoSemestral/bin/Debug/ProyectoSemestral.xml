@@ -32,7 +32,22 @@ ProyectoSemestral
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ProyectoSemestral.My.Resources.Resources.neonCuadradoVerde">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoSemestral.My.Resources.Resources.neonCuadradoVerde2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ProyectoSemestral.My.Resources.Resources.Producto">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoSemestral.My.Resources.Resources.verdeCompleto">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

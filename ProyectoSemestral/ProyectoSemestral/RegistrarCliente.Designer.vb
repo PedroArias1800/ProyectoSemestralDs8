@@ -36,35 +36,39 @@ Partial Class RegistrarCliente
         '
         'btnRegistrarCliente
         '
+        Me.btnRegistrarCliente.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.btnRegistrarCliente.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistrarCliente.ForeColor = System.Drawing.Color.White
         Me.btnRegistrarCliente.Location = New System.Drawing.Point(485, 446)
         Me.btnRegistrarCliente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRegistrarCliente.Name = "btnRegistrarCliente"
         Me.btnRegistrarCliente.Size = New System.Drawing.Size(164, 47)
         Me.btnRegistrarCliente.TabIndex = 10
         Me.btnRegistrarCliente.Text = "Registrar"
-        Me.btnRegistrarCliente.UseVisualStyleBackColor = True
+        Me.btnRegistrarCliente.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.GroupBox1.Controls.Add(Me.txtApellido)
         Me.GroupBox1.Controls.Add(Me.lblApellido)
         Me.GroupBox1.Controls.Add(Me.txtCedula)
         Me.GroupBox1.Controls.Add(Me.lblCedula)
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.lblNombre)
-        Me.GroupBox1.Location = New System.Drawing.Point(15, 118)
+        Me.GroupBox1.Location = New System.Drawing.Point(127, 122)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(1036, 298)
+        Me.GroupBox1.Size = New System.Drawing.Size(817, 296)
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
         '
         'txtApellido
         '
         Me.txtApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtApellido.Location = New System.Drawing.Point(413, 127)
+        Me.txtApellido.ForeColor = System.Drawing.Color.Black
+        Me.txtApellido.Location = New System.Drawing.Point(329, 124)
         Me.txtApellido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(325, 34)
@@ -74,7 +78,8 @@ Partial Class RegistrarCliente
         '
         Me.lblApellido.AutoSize = True
         Me.lblApellido.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblApellido.Location = New System.Drawing.Point(285, 129)
+        Me.lblApellido.ForeColor = System.Drawing.Color.White
+        Me.lblApellido.Location = New System.Drawing.Point(201, 126)
         Me.lblApellido.Name = "lblApellido"
         Me.lblApellido.Size = New System.Drawing.Size(114, 31)
         Me.lblApellido.TabIndex = 9
@@ -83,7 +88,8 @@ Partial Class RegistrarCliente
         'txtCedula
         '
         Me.txtCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCedula.Location = New System.Drawing.Point(413, 204)
+        Me.txtCedula.ForeColor = System.Drawing.Color.Black
+        Me.txtCedula.Location = New System.Drawing.Point(329, 201)
         Me.txtCedula.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtCedula.Name = "txtCedula"
         Me.txtCedula.Size = New System.Drawing.Size(325, 34)
@@ -93,7 +99,8 @@ Partial Class RegistrarCliente
         '
         Me.lblCedula.AutoSize = True
         Me.lblCedula.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCedula.Location = New System.Drawing.Point(300, 207)
+        Me.lblCedula.ForeColor = System.Drawing.Color.White
+        Me.lblCedula.Location = New System.Drawing.Point(216, 204)
         Me.lblCedula.Name = "lblCedula"
         Me.lblCedula.Size = New System.Drawing.Size(99, 31)
         Me.lblCedula.TabIndex = 5
@@ -102,7 +109,8 @@ Partial Class RegistrarCliente
         'txtNombre
         '
         Me.txtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(413, 48)
+        Me.txtNombre.ForeColor = System.Drawing.Color.Black
+        Me.txtNombre.Location = New System.Drawing.Point(329, 45)
         Me.txtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(325, 34)
@@ -112,7 +120,8 @@ Partial Class RegistrarCliente
         '
         Me.lblNombre.AutoSize = True
         Me.lblNombre.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombre.Location = New System.Drawing.Point(285, 50)
+        Me.lblNombre.ForeColor = System.Drawing.Color.White
+        Me.lblNombre.Location = New System.Drawing.Point(201, 47)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(115, 31)
         Me.lblNombre.TabIndex = 1
@@ -121,7 +130,9 @@ Partial Class RegistrarCliente
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(420, 42)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(253, 39)
@@ -132,6 +143,8 @@ Partial Class RegistrarCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.ProyectoSemestral.My.Resources.Resources.neonCuadradoVerde
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.btnRegistrarCliente)
         Me.Controls.Add(Me.GroupBox1)

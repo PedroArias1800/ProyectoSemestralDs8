@@ -95,7 +95,7 @@ Partial Class RegistrarUsuario
         Me.cboTipoCuenta.FormattingEnabled = True
         Me.cboTipoCuenta.ItemHeight = 25
         Me.cboTipoCuenta.Location = New System.Drawing.Point(691, 198)
-        Me.cboTipoCuenta.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.cboTipoCuenta.Margin = New System.Windows.Forms.Padding(5)
         Me.cboTipoCuenta.Name = "cboTipoCuenta"
         Me.cboTipoCuenta.Size = New System.Drawing.Size(325, 33)
         Me.cboTipoCuenta.TabIndex = 13
@@ -234,7 +234,7 @@ Partial Class RegistrarUsuario
         '
         Me.dtgRU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtgRU.Location = New System.Drawing.Point(1188, 539)
-        Me.dtgRU.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dtgRU.Margin = New System.Windows.Forms.Padding(4)
         Me.dtgRU.Name = "dtgRU"
         Me.dtgRU.RowHeadersWidth = 51
         Me.dtgRU.Size = New System.Drawing.Size(23, 21)
@@ -245,6 +245,7 @@ Partial Class RegistrarUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1227, 575)
         Me.ControlBox = False
         Me.Controls.Add(Me.dtgRU)
@@ -252,7 +253,7 @@ Partial Class RegistrarUsuario
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.HelpButton = True
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "RegistrarUsuario"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
