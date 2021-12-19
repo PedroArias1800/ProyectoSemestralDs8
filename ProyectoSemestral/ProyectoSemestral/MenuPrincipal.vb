@@ -141,4 +141,5 @@
         Reporte.WindowState = FormWindowState.Maximized
         Reporte.Show()
     End Sub
+
 End Class

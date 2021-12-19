@@ -4,6 +4,8 @@ Public Class Reporte
         Label1.Left = Me.Width / 2 - (Label1.Width / 2)
         GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
 
+        Label1.BackColor = Color.FromArgb(230, 64, 64, 64)
+
         Dim glComand As New SqlCommand
         Dim dtOrdenes As New DataTable
         Dim SqlDa As SqlDataAdapter

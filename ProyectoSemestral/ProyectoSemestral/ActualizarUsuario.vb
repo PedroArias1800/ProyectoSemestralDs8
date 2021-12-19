@@ -68,6 +68,12 @@ Public Class ActualizarUsuario
         Label1.Left = Me.Width / 2 - (Label1.Width / 2)
         GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
 
+        Label1.BackColor = Color.FromArgb(230, 64, 64, 64)
+        GroupBox1.BackColor = Color.FromArgb(230, 64, 64, 64)
+        btnActualizar.BackColor = Color.FromArgb(230, 64, 64, 64)
+        btnReiniciar.BackColor = Color.FromArgb(230, 64, 64, 64)
+        btnVolver.BackColor = Color.FromArgb(230, 64, 64, 64)
+
         nombre = txtNombre.Text
         apellido = txtApellido.Text
         cedula = txtCedula.Text

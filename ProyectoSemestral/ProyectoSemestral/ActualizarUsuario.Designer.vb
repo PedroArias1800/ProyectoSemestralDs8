@@ -25,6 +25,7 @@ Partial Class ActualizarUsuario
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtNombreCompleto = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cboIntento = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -43,14 +44,15 @@ Partial Class ActualizarUsuario
         Me.txtApellido = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
-        Me.cboIntento = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(287, 28)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(340, 44)
@@ -61,6 +63,7 @@ Partial Class ActualizarUsuario
         '
         Me.txtNombreCompleto.AutoSize = True
         Me.txtNombreCompleto.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombreCompleto.ForeColor = System.Drawing.Color.White
         Me.txtNombreCompleto.Location = New System.Drawing.Point(11, 21)
         Me.txtNombreCompleto.Name = "txtNombreCompleto"
         Me.txtNombreCompleto.Size = New System.Drawing.Size(308, 36)
@@ -69,6 +72,7 @@ Partial Class ActualizarUsuario
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.cboIntento)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.btnVolver)
@@ -89,16 +93,28 @@ Partial Class ActualizarUsuario
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.txtNombreCompleto)
-        Me.GroupBox1.Location = New System.Drawing.Point(39, 98)
+        Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.GroupBox1.Location = New System.Drawing.Point(52, 95)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(817, 467)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         '
+        'cboIntento
+        '
+        Me.cboIntento.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboIntento.ForeColor = System.Drawing.Color.Black
+        Me.cboIntento.FormattingEnabled = True
+        Me.cboIntento.Location = New System.Drawing.Point(433, 263)
+        Me.cboIntento.Name = "cboIntento"
+        Me.cboIntento.Size = New System.Drawing.Size(97, 35)
+        Me.cboIntento.TabIndex = 20
+        '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
         Me.Label9.Location = New System.Drawing.Point(708, 28)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(41, 27)
@@ -107,18 +123,21 @@ Partial Class ActualizarUsuario
         '
         'btnVolver
         '
+        Me.btnVolver.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.btnVolver.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.ForeColor = System.Drawing.Color.White
         Me.btnVolver.Location = New System.Drawing.Point(0, 429)
         Me.btnVolver.Name = "btnVolver"
         Me.btnVolver.Size = New System.Drawing.Size(121, 38)
         Me.btnVolver.TabIndex = 15
         Me.btnVolver.Text = "Volver"
-        Me.btnVolver.UseVisualStyleBackColor = True
+        Me.btnVolver.UseVisualStyleBackColor = False
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
         Me.Label8.Location = New System.Drawing.Point(242, 266)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(185, 27)
@@ -129,6 +148,7 @@ Partial Class ActualizarUsuario
         '
         Me.txtId.AutoSize = True
         Me.txtId.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtId.ForeColor = System.Drawing.Color.White
         Me.txtId.Location = New System.Drawing.Point(746, 28)
         Me.txtId.Name = "txtId"
         Me.txtId.Size = New System.Drawing.Size(36, 27)
@@ -138,6 +158,7 @@ Partial Class ActualizarUsuario
         'cboTipo
         '
         Me.cboTipo.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboTipo.ForeColor = System.Drawing.Color.Black
         Me.cboTipo.FormattingEnabled = True
         Me.cboTipo.Location = New System.Drawing.Point(500, 202)
         Me.cboTipo.Name = "cboTipo"
@@ -148,6 +169,7 @@ Partial Class ActualizarUsuario
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(421, 205)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(63, 27)
@@ -156,28 +178,33 @@ Partial Class ActualizarUsuario
         '
         'btnReiniciar
         '
+        Me.btnReiniciar.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.btnReiniciar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReiniciar.ForeColor = System.Drawing.Color.White
         Me.btnReiniciar.Location = New System.Drawing.Point(224, 353)
         Me.btnReiniciar.Name = "btnReiniciar"
         Me.btnReiniciar.Size = New System.Drawing.Size(186, 44)
         Me.btnReiniciar.TabIndex = 13
         Me.btnReiniciar.Text = "Reiniciar"
-        Me.btnReiniciar.UseVisualStyleBackColor = True
+        Me.btnReiniciar.UseVisualStyleBackColor = False
         '
         'btnActualizar
         '
+        Me.btnActualizar.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.btnActualizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnActualizar.ForeColor = System.Drawing.Color.White
         Me.btnActualizar.Location = New System.Drawing.Point(416, 353)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(186, 44)
         Me.btnActualizar.TabIndex = 12
         Me.btnActualizar.Text = "Actualizar"
-        Me.btnActualizar.UseVisualStyleBackColor = True
+        Me.btnActualizar.UseVisualStyleBackColor = False
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(20, 205)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(114, 27)
@@ -187,6 +214,7 @@ Partial Class ActualizarUsuario
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.ForeColor = System.Drawing.Color.Black
         Me.txtPassword.Location = New System.Drawing.Point(150, 202)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(245, 33)
@@ -196,6 +224,7 @@ Partial Class ActualizarUsuario
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(421, 153)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(73, 27)
@@ -205,6 +234,7 @@ Partial Class ActualizarUsuario
         'txtEmail
         '
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.ForeColor = System.Drawing.Color.Black
         Me.txtEmail.Location = New System.Drawing.Point(500, 150)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(291, 33)
@@ -214,6 +244,7 @@ Partial Class ActualizarUsuario
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(20, 153)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(87, 27)
@@ -223,6 +254,7 @@ Partial Class ActualizarUsuario
         'txtCedula
         '
         Me.txtCedula.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCedula.ForeColor = System.Drawing.Color.Black
         Me.txtCedula.Location = New System.Drawing.Point(150, 147)
         Me.txtCedula.Name = "txtCedula"
         Me.txtCedula.Size = New System.Drawing.Size(245, 33)
@@ -232,6 +264,7 @@ Partial Class ActualizarUsuario
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(421, 98)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(102, 27)
@@ -241,6 +274,7 @@ Partial Class ActualizarUsuario
         'txtApellido
         '
         Me.txtApellido.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtApellido.ForeColor = System.Drawing.Color.Black
         Me.txtApellido.Location = New System.Drawing.Point(546, 95)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(245, 33)
@@ -250,6 +284,7 @@ Partial Class ActualizarUsuario
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(20, 98)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(101, 27)
@@ -259,24 +294,18 @@ Partial Class ActualizarUsuario
         'txtNombre
         '
         Me.txtNombre.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.ForeColor = System.Drawing.Color.Black
         Me.txtNombre.Location = New System.Drawing.Point(150, 95)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(245, 33)
         Me.txtNombre.TabIndex = 2
         '
-        'cboIntento
-        '
-        Me.cboIntento.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboIntento.FormattingEnabled = True
-        Me.cboIntento.Location = New System.Drawing.Point(433, 263)
-        Me.cboIntento.Name = "cboIntento"
-        Me.cboIntento.Size = New System.Drawing.Size(97, 35)
-        Me.cboIntento.TabIndex = 20
-        '
         'ActualizarUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.ProyectoSemestral.My.Resources.Resources.neonCuadradoVerde2
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(918, 596)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)

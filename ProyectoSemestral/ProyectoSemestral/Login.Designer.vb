@@ -41,7 +41,7 @@ Partial Class Login
         Me.Label1.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(276, 29)
+        Me.Label1.Location = New System.Drawing.Point(325, 72)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(245, 39)
         Me.Label1.TabIndex = 0
@@ -77,7 +77,7 @@ Partial Class Login
         Me.GroupBox1.Controls.Add(Me.txtEmail)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Location = New System.Drawing.Point(46, 119)
+        Me.GroupBox1.Location = New System.Drawing.Point(95, 162)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -113,7 +113,7 @@ Partial Class Login
         Me.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnIniciarSesion.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIniciarSesion.ForeColor = System.Drawing.Color.White
-        Me.btnIniciarSesion.Location = New System.Drawing.Point(263, 295)
+        Me.btnIniciarSesion.Location = New System.Drawing.Point(312, 338)
         Me.btnIniciarSesion.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnIniciarSesion.Name = "btnIniciarSesion"
         Me.btnIniciarSesion.Size = New System.Drawing.Size(276, 48)
@@ -143,7 +143,7 @@ Partial Class Login
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(220, 348)
+        Me.Button1.Location = New System.Drawing.Point(269, 391)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(356, 46)
         Me.Button1.TabIndex = 6
@@ -156,7 +156,7 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.ProyectoSemestral.My.Resources.Resources.verdeCompleto
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(910, 552)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.dtgIniciarSesion)
         Me.Controls.Add(Me.btnIniciarSesion)

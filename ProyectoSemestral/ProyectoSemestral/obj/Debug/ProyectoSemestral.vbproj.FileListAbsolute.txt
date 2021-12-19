@@ -70,3 +70,4 @@ C:\Users\User\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSe
 C:\Users\User\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.Cobrar.resources
 C:\Users\User\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.Reporte.resources
 C:\Users\User\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.RecuperarContraseña.resources
+C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.RecuperarContraseña.resources

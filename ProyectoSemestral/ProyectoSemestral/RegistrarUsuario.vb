@@ -6,11 +6,13 @@ Public Class RegistrarUsuario
         btnRegistrarUsuario.Left = Me.Width / 2 - (btnRegistrarUsuario.Width / 2)
         Label1.Left = Me.Width / 2 - (Label1.Width / 2)
 
-        GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
-        GroupBox1.Top = Me.Height / 2 - (GroupBox1.Height / 2)
-        Label1.Left = GroupBox1.Width / 2 - (Label1.Width / 2)
+        GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 1.8)
+        btnRegistrarUsuario.Left = Me.Width / 2 - (btnRegistrarUsuario.Width / 1.8)
+        Label1.Left = Me.Width / 2 - (Label1.Width / 1.8)
 
-        GroupBox1.BackColor = Color.FromArgb(230, 169, 169, 169)
+        Label1.BackColor = Color.FromArgb(230, 64, 64, 64)
+        GroupBox1.BackColor = Color.FromArgb(230, 64, 64, 64)
+        btnRegistrarUsuario.BackColor = Color.FromArgb(230, 64, 64, 64)
 
         cboTipoCuenta.Items.Add("Seleccione un tipo")
         cboTipoCuenta.Items.Add("Administrador")
@@ -76,9 +78,12 @@ Public Class RegistrarUsuario
         End If
     End Sub
 
-    Private Sub RegistrarUsuario_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Bienvenida.MdiParent = MenuPrincipal
-        Bienvenida.WindowState = FormWindowState.Maximized
-        Bienvenida.Show()
+    Private Sub cboTipoCuenta_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboTipoCuenta.KeyPress
+        If Asc(e.KeyChar) <> 0 Then
+            If Asc(e.KeyChar) < 45 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
     End Sub
+
 End Class

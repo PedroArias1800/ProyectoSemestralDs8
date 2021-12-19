@@ -34,8 +34,12 @@ Partial Class Actualizar
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.GroupBox1.Controls.Add(Me.dtg1)
         Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.GroupBox1.ForeColor = System.Drawing.Color.White
         Me.GroupBox1.Location = New System.Drawing.Point(39, 95)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(1031, 466)
@@ -48,15 +52,15 @@ Partial Class Actualizar
         Me.dtg1.AllowUserToDeleteRows = False
         Me.dtg1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.dtg1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dtg1.BackgroundColor = System.Drawing.Color.LightCoral
+        Me.dtg1.BackgroundColor = System.Drawing.Color.Black
         Me.dtg1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dtg1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
         Me.dtg1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.Maroon
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.ForestGreen
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Brown
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGreen
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dtg1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
@@ -65,12 +69,12 @@ Partial Class Actualizar
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Firebrick
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.ForestGreen
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dtg1.DefaultCellStyle = DataGridViewCellStyle2
         Me.dtg1.EnableHeadersVisualStyles = False
-        Me.dtg1.GridColor = System.Drawing.Color.Firebrick
+        Me.dtg1.GridColor = System.Drawing.Color.White
         Me.dtg1.Location = New System.Drawing.Point(22, 72)
         Me.dtg1.Name = "dtg1"
         Me.dtg1.ReadOnly = True
@@ -84,6 +88,7 @@ Partial Class Actualizar
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(11, 21)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(436, 36)
@@ -93,7 +98,9 @@ Partial Class Actualizar
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(467, 27)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(186, 44)
@@ -104,6 +111,8 @@ Partial Class Actualizar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Black
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1112, 593)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)

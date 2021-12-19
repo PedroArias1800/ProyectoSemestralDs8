@@ -57,17 +57,38 @@ Public Class RecuperarContraseña
             e_mail = New MailMessage
             e_mail.From = New MailAddress("ds8semestral@gmail.com")
             e_mail.To.Add(txtCorreo.Text)
-            e_mail.Subject = "prueba"
-            e_mail.Body = "" & Temp
+            e_mail.Subject = "Petición De Contraseña Temporal"
+            e_mail.Body = "Puede acceder a su cuenta con la siguiente contraseña temporal:" & vbCrLf & Temp
             Smtp_Server.Send(e_mail)
-            MsgBox("correo enviado")
+            MsgBox("¡Se ha enviado exitosamente el correo, revíselo en sus bandejas de entrada!", vbYes, "Éxito")
+            Me.Hide()
+            Login.txtEmail.Text = txtCorreo.Text
+            Login.txtPassword.Text = ""
+            Me.txtCorreo.Text = ""
+            Login.Show()
 
         Catch ex As Exception
-            MsgBox("error al enviar el correo")
+            MsgBox("Error al enviar el correo", vbYes, "Error")
 
         End Try
     End Sub
 
+    Private Sub RecuperarContraseña_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label1.Left = Me.Width / 2 - (Label1.Width / 2)
+        Button1.Left = Me.Width / 2 - (Button1.Width / 2)
+        Button2.Left = Me.Width / 2 - (Button2.Width / 2)
+        GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
 
+        Button2.BackColor = Color.FromArgb(230, 64, 64, 64)
+        GroupBox1.BackColor = Color.FromArgb(230, 64, 64, 64)
+        Label1.BackColor = Color.FromArgb(230, 64, 64, 64)
+    End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        Me.txtCorreo.Text = ""
+        Login.txtEmail.Text = ""
+        Login.txtPassword.Text = ""
+        Login.Show()
+    End Sub
 End Class
