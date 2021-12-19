@@ -4,19 +4,19 @@ Public Class Actualizar
     Private Sub Actualizar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Escribiendo textos
         If accion = "U" Then
-            Label1.Text = "Actualizar Usuarios"
+            Label1.Text = "ACTUALIZAR USUARIOS"
             Label2.Text = "Seleccione un usuario de la lista"
         ElseIf accion = "C" Then
-            Label1.Text = "Actualizar Clientes"
+            Label1.Text = "ACTUALIZAR CLIENTES"
             Label2.Text = "Seleccione un cliente de la lista"
         ElseIf accion = "CC" Then
             Label1.Text = "Cobrar"
             Label2.Text = "Seleccione un cliente de la lista"
         ElseIf accion = "P" Then
-            Label1.Text = "Actualizar Productos"
+            Label1.Text = "ACTUALIZAR PRODUCTOS"
             Label2.Text = "Seleccione un producto de la lista"
         ElseIf accion = "E" Then
-            Label1.Text = "Eliminar Productos"
+            Label1.Text = "ELIMINAR PRODUCTOS"
             Label2.Text = "Seleccione un producto de la lista"
 
         Else
@@ -26,8 +26,12 @@ Public Class Actualizar
         End If
 
         'Centrando elementos
-        Label1.Left = Me.Width / 2 - (Label1.Width / 2)
         GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
+        GroupBox1.Top = Me.Height / 2 - (GroupBox1.Height / 2)
+        Label1.Left = GroupBox1.Width / 2 - (Label1.Width / 2)
+
+        'Diseño de Elementos
+        GroupBox1.BackColor = Color.FromArgb(230, 169, 169, 169)
 
         Dim glComand As New SqlCommand
         Dim dtOrdenes As New DataTable
@@ -226,4 +230,5 @@ Public Class Actualizar
         Bienvenida.WindowState = FormWindowState.Maximized
         Bienvenida.Show()
     End Sub
+
 End Class

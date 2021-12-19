@@ -7,6 +7,7 @@
 
 
     Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.WindowState = FormWindowState.Maximized
         If tipo = 1 Then
             Bienvenida.txtBienvenida.Text = "Bienvenido Administrador " & nombreCompleto
         ElseIf tipo = 2 Then
