@@ -23,7 +23,6 @@ Partial Class ActualizarProducto
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.txtImg = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -40,13 +39,13 @@ Partial Class ActualizarProducto
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtNombreCompleto = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtImg = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtImg)
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.Button1)
@@ -63,28 +62,17 @@ Partial Class ActualizarProducto
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.txtNombreCompleto)
-        Me.GroupBox1.Location = New System.Drawing.Point(38, 11)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(51, 100)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(613, 449)
+        Me.GroupBox1.Size = New System.Drawing.Size(817, 467)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
         '
-        'txtImg
-        '
-        Me.txtImg.Location = New System.Drawing.Point(598, 361)
-        Me.txtImg.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.txtImg.Name = "txtImg"
-        Me.txtImg.Size = New System.Drawing.Size(15, 20)
-        Me.txtImg.TabIndex = 24
-        '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(211, 223)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Location = New System.Drawing.Point(281, 198)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(216, 133)
+        Me.PictureBox1.Size = New System.Drawing.Size(288, 164)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 23
         Me.PictureBox1.TabStop = False
@@ -92,10 +80,10 @@ Partial Class ActualizarProducto
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(410, 180)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Location = New System.Drawing.Point(546, 145)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(177, 27)
+        Me.Button1.Size = New System.Drawing.Size(236, 33)
         Me.Button1.TabIndex = 22
         Me.Button1.Text = "Seleccionar imagen..."
         Me.Button1.UseVisualStyleBackColor = True
@@ -104,10 +92,9 @@ Partial Class ActualizarProducto
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(329, 182)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(439, 148)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(75, 22)
+        Me.Label5.Size = New System.Drawing.Size(95, 27)
         Me.Label5.TabIndex = 21
         Me.Label5.Text = "Imagen:"
         '
@@ -115,20 +102,18 @@ Partial Class ActualizarProducto
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(531, 85)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Location = New System.Drawing.Point(708, 28)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(33, 22)
+        Me.Label9.Size = New System.Drawing.Size(41, 27)
         Me.Label9.TabIndex = 19
         Me.Label9.Text = "ID:"
         '
         'btnVolver
         '
         Me.btnVolver.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVolver.Location = New System.Drawing.Point(0, 411)
-        Me.btnVolver.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnVolver.Location = New System.Drawing.Point(0, 429)
         Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(91, 31)
+        Me.btnVolver.Size = New System.Drawing.Size(121, 38)
         Me.btnVolver.TabIndex = 15
         Me.btnVolver.Text = "Volver"
         Me.btnVolver.UseVisualStyleBackColor = True
@@ -137,20 +122,18 @@ Partial Class ActualizarProducto
         '
         Me.txtId.AutoSize = True
         Me.txtId.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtId.Location = New System.Drawing.Point(560, 85)
-        Me.txtId.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.txtId.Location = New System.Drawing.Point(746, 28)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(30, 22)
+        Me.txtId.Size = New System.Drawing.Size(36, 27)
         Me.txtId.TabIndex = 16
         Me.txtId.Text = "00"
         '
         'btnReiniciar
         '
         Me.btnReiniciar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReiniciar.Location = New System.Drawing.Point(172, 368)
-        Me.btnReiniciar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnReiniciar.Location = New System.Drawing.Point(230, 377)
         Me.btnReiniciar.Name = "btnReiniciar"
-        Me.btnReiniciar.Size = New System.Drawing.Size(140, 36)
+        Me.btnReiniciar.Size = New System.Drawing.Size(186, 44)
         Me.btnReiniciar.TabIndex = 13
         Me.btnReiniciar.Text = "Reiniciar"
         Me.btnReiniciar.UseVisualStyleBackColor = True
@@ -158,10 +141,9 @@ Partial Class ActualizarProducto
         'btnActualizar
         '
         Me.btnActualizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnActualizar.Location = New System.Drawing.Point(316, 368)
-        Me.btnActualizar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnActualizar.Location = New System.Drawing.Point(422, 377)
         Me.btnActualizar.Name = "btnActualizar"
-        Me.btnActualizar.Size = New System.Drawing.Size(140, 36)
+        Me.btnActualizar.Size = New System.Drawing.Size(186, 44)
         Me.btnActualizar.TabIndex = 12
         Me.btnActualizar.Text = "Actualizar"
         Me.btnActualizar.UseVisualStyleBackColor = True
@@ -170,70 +152,63 @@ Partial Class ActualizarProducto
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(15, 185)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(20, 151)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(88, 22)
+        Me.Label4.Size = New System.Drawing.Size(108, 27)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Cantidad:"
         '
         'txtCantidad
         '
         Me.txtCantidad.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCantidad.Location = New System.Drawing.Point(112, 180)
-        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCantidad.Location = New System.Drawing.Point(150, 145)
         Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(185, 28)
+        Me.txtCantidad.Size = New System.Drawing.Size(245, 33)
         Me.txtCantidad.TabIndex = 6
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(329, 140)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(439, 96)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(66, 22)
+        Me.Label3.Size = New System.Drawing.Size(80, 27)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Precio:"
         '
         'txtPrecio
         '
         Me.txtPrecio.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPrecio.Location = New System.Drawing.Point(410, 138)
-        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPrecio.Location = New System.Drawing.Point(546, 93)
         Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(178, 28)
+        Me.txtPrecio.Size = New System.Drawing.Size(236, 33)
         Me.txtPrecio.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(15, 140)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(20, 96)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(83, 22)
+        Me.Label2.Size = New System.Drawing.Size(101, 27)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Nombre:"
         '
         'txtNombre
         '
         Me.txtNombre.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(112, 138)
-        Me.txtNombre.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNombre.Location = New System.Drawing.Point(150, 93)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(185, 28)
+        Me.txtNombre.Size = New System.Drawing.Size(245, 33)
         Me.txtNombre.TabIndex = 2
         '
         'txtNombreCompleto
         '
         Me.txtNombreCompleto.AutoSize = True
         Me.txtNombreCompleto.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombreCompleto.Location = New System.Drawing.Point(8, 79)
-        Me.txtNombreCompleto.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.txtNombreCompleto.Location = New System.Drawing.Point(11, 21)
         Me.txtNombreCompleto.Name = "txtNombreCompleto"
-        Me.txtNombreCompleto.Size = New System.Drawing.Size(260, 30)
+        Me.txtNombreCompleto.Size = New System.Drawing.Size(329, 36)
         Me.txtNombreCompleto.TabIndex = 1
         Me.txtNombreCompleto.Text = "Producto Seleccionado:"
         '
@@ -241,28 +216,33 @@ Partial Class ActualizarProducto
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(129, 15)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(299, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(358, 36)
+        Me.Label1.Size = New System.Drawing.Size(350, 44)
         Me.Label1.TabIndex = 6
-        Me.Label1.Text = "ACTUALIZAR PRODUCTO"
+        Me.Label1.Text = "Actualizar Producto"
+        '
+        'txtImg
+        '
+        Me.txtImg.Location = New System.Drawing.Point(797, 444)
+        Me.txtImg.Name = "txtImg"
+        Me.txtImg.Size = New System.Drawing.Size(19, 22)
+        Me.txtImg.TabIndex = 24
         '
         'ActualizarProducto
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.ProyectoSemestral.My.Resources.Resources.actualizar_product_fondo
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(688, 484)
+        Me.ClientSize = New System.Drawing.Size(918, 596)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Controls.Add(Me.Label1)
         Me.Name = "ActualizarProducto"
         Me.Text = "Actualizar Producto"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 

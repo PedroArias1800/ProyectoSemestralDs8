@@ -123,12 +123,4 @@ Public Class RegistrarProducto
         End Try
     End Sub
 
-    Private Sub RegistrarProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
-        GroupBox1.Top = Me.Height / 2 - (GroupBox1.Height / 2)
-        Label1.Left = GroupBox1.Width / 2 - (Label1.Width / 2)
-        btnRegistrarProducto.Left = GroupBox1.Width / 2 - (btnRegistrarProducto.Width / 2)
-
-        GroupBox1.BackColor = Color.FromArgb(230, 169, 169, 169)
-    End Sub
 End Class

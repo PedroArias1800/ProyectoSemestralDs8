@@ -47,18 +47,16 @@ Partial Class RegistrarUsuario
         'btnRegistrarUsuario
         '
         Me.btnRegistrarUsuario.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRegistrarUsuario.Location = New System.Drawing.Point(336, 351)
-        Me.btnRegistrarUsuario.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRegistrarUsuario.Location = New System.Drawing.Point(533, 464)
+        Me.btnRegistrarUsuario.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRegistrarUsuario.Name = "btnRegistrarUsuario"
-        Me.btnRegistrarUsuario.Size = New System.Drawing.Size(151, 38)
+        Me.btnRegistrarUsuario.Size = New System.Drawing.Size(201, 47)
         Me.btnRegistrarUsuario.TabIndex = 7
         Me.btnRegistrarUsuario.Text = "Registrar"
         Me.btnRegistrarUsuario.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.btnRegistrarUsuario)
         Me.GroupBox1.Controls.Add(Me.lblTipo)
         Me.GroupBox1.Controls.Add(Me.cboTipoCuenta)
         Me.GroupBox1.Controls.Add(Me.txtContraseña2)
@@ -73,11 +71,11 @@ Partial Class RegistrarUsuario
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.lblNombre)
         Me.GroupBox1.Controls.Add(Me.lblCorreo)
-        Me.GroupBox1.Location = New System.Drawing.Point(50, 11)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(67, 103)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(805, 405)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(1073, 334)
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         '
@@ -85,10 +83,9 @@ Partial Class RegistrarUsuario
         '
         Me.lblTipo.AutoSize = True
         Me.lblTipo.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTipo.Location = New System.Drawing.Point(473, 238)
-        Me.lblTipo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTipo.Location = New System.Drawing.Point(609, 198)
         Me.lblTipo.Name = "lblTipo"
-        Me.lblTipo.Size = New System.Drawing.Size(57, 25)
+        Me.lblTipo.Size = New System.Drawing.Size(70, 31)
         Me.lblTipo.TabIndex = 14
         Me.lblTipo.Text = "Tipo:"
         '
@@ -96,41 +93,40 @@ Partial Class RegistrarUsuario
         '
         Me.cboTipoCuenta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboTipoCuenta.FormattingEnabled = True
-        Me.cboTipoCuenta.ItemHeight = 20
-        Me.cboTipoCuenta.Location = New System.Drawing.Point(534, 238)
-        Me.cboTipoCuenta.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboTipoCuenta.ItemHeight = 25
+        Me.cboTipoCuenta.Location = New System.Drawing.Point(691, 198)
+        Me.cboTipoCuenta.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.cboTipoCuenta.Name = "cboTipoCuenta"
-        Me.cboTipoCuenta.Size = New System.Drawing.Size(245, 28)
+        Me.cboTipoCuenta.Size = New System.Drawing.Size(325, 33)
         Me.cboTipoCuenta.TabIndex = 13
         '
         'txtContraseña2
         '
         Me.txtContraseña2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtContraseña2.Location = New System.Drawing.Point(153, 292)
-        Me.txtContraseña2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtContraseña2.Location = New System.Drawing.Point(183, 265)
+        Me.txtContraseña2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtContraseña2.Name = "txtContraseña2"
         Me.txtContraseña2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtContraseña2.Size = New System.Drawing.Size(245, 28)
+        Me.txtContraseña2.Size = New System.Drawing.Size(325, 34)
         Me.txtContraseña2.TabIndex = 12
         Me.txtContraseña2.Tag = ""
         '
         'txtApellido
         '
         Me.txtApellido.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtApellido.Location = New System.Drawing.Point(534, 104)
-        Me.txtApellido.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtApellido.Location = New System.Drawing.Point(691, 33)
+        Me.txtApellido.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(245, 28)
+        Me.txtApellido.Size = New System.Drawing.Size(325, 34)
         Me.txtApellido.TabIndex = 11
         '
         'lblApellido
         '
         Me.lblApellido.AutoSize = True
         Me.lblApellido.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblApellido.Location = New System.Drawing.Point(438, 106)
-        Me.lblApellido.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblApellido.Location = New System.Drawing.Point(563, 36)
         Me.lblApellido.Name = "lblApellido"
-        Me.lblApellido.Size = New System.Drawing.Size(92, 25)
+        Me.lblApellido.Size = New System.Drawing.Size(114, 31)
         Me.lblApellido.TabIndex = 9
         Me.lblApellido.Text = "Apellido:"
         '
@@ -139,40 +135,38 @@ Partial Class RegistrarUsuario
         Me.lblContraseña2.AutoSize = True
         Me.lblContraseña2.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblContraseña2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.lblContraseña2.Location = New System.Drawing.Point(27, 294)
-        Me.lblContraseña2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblContraseña2.Location = New System.Drawing.Point(15, 267)
         Me.lblContraseña2.Name = "lblContraseña2"
-        Me.lblContraseña2.Size = New System.Drawing.Size(122, 25)
+        Me.lblContraseña2.Size = New System.Drawing.Size(150, 31)
         Me.lblContraseña2.TabIndex = 10
         Me.lblContraseña2.Text = "Contraseña:"
         '
         'txtContraseña
         '
         Me.txtContraseña.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtContraseña.Location = New System.Drawing.Point(153, 236)
-        Me.txtContraseña.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtContraseña.Location = New System.Drawing.Point(183, 196)
+        Me.txtContraseña.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtContraseña.Name = "txtContraseña"
         Me.txtContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtContraseña.Size = New System.Drawing.Size(245, 28)
+        Me.txtContraseña.Size = New System.Drawing.Size(325, 34)
         Me.txtContraseña.TabIndex = 8
         '
         'txtCedula
         '
         Me.txtCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCedula.Location = New System.Drawing.Point(534, 168)
-        Me.txtCedula.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCedula.Location = New System.Drawing.Point(691, 112)
+        Me.txtCedula.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtCedula.Name = "txtCedula"
-        Me.txtCedula.Size = New System.Drawing.Size(245, 28)
+        Me.txtCedula.Size = New System.Drawing.Size(325, 34)
         Me.txtCedula.TabIndex = 7
         '
         'lblCedula
         '
         Me.lblCedula.AutoSize = True
         Me.lblCedula.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCedula.Location = New System.Drawing.Point(449, 170)
-        Me.lblCedula.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblCedula.Location = New System.Drawing.Point(577, 114)
         Me.lblCedula.Name = "lblCedula"
-        Me.lblCedula.Size = New System.Drawing.Size(81, 25)
+        Me.lblCedula.Size = New System.Drawing.Size(99, 31)
         Me.lblCedula.TabIndex = 5
         Me.lblCedula.Text = "Cédula:"
         '
@@ -181,39 +175,37 @@ Partial Class RegistrarUsuario
         Me.lblContraseña.AutoSize = True
         Me.lblContraseña.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblContraseña.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.lblContraseña.Location = New System.Drawing.Point(27, 236)
-        Me.lblContraseña.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblContraseña.Location = New System.Drawing.Point(15, 196)
         Me.lblContraseña.Name = "lblContraseña"
-        Me.lblContraseña.Size = New System.Drawing.Size(122, 25)
+        Me.lblContraseña.Size = New System.Drawing.Size(150, 31)
         Me.lblContraseña.TabIndex = 6
         Me.lblContraseña.Text = "Contraseña:"
         '
         'txtCorreo
         '
         Me.txtCorreo.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCorreo.Location = New System.Drawing.Point(153, 169)
-        Me.txtCorreo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCorreo.Location = New System.Drawing.Point(183, 113)
+        Me.txtCorreo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtCorreo.Name = "txtCorreo"
-        Me.txtCorreo.Size = New System.Drawing.Size(245, 28)
+        Me.txtCorreo.Size = New System.Drawing.Size(325, 34)
         Me.txtCorreo.TabIndex = 4
         '
         'txtNombre
         '
         Me.txtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(153, 105)
-        Me.txtNombre.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNombre.Location = New System.Drawing.Point(183, 34)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(245, 28)
+        Me.txtNombre.Size = New System.Drawing.Size(325, 34)
         Me.txtNombre.TabIndex = 3
         '
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
         Me.lblNombre.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombre.Location = New System.Drawing.Point(57, 107)
-        Me.lblNombre.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblNombre.Location = New System.Drawing.Point(55, 37)
         Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(92, 25)
+        Me.lblNombre.Size = New System.Drawing.Size(115, 31)
         Me.lblNombre.TabIndex = 1
         Me.lblNombre.Text = "Nombre:"
         '
@@ -222,10 +214,9 @@ Partial Class RegistrarUsuario
         Me.lblCorreo.AutoSize = True
         Me.lblCorreo.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCorreo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.lblCorreo.Location = New System.Drawing.Point(70, 171)
-        Me.lblCorreo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblCorreo.Location = New System.Drawing.Point(72, 116)
         Me.lblCorreo.Name = "lblCorreo"
-        Me.lblCorreo.Size = New System.Drawing.Size(79, 25)
+        Me.lblCorreo.Size = New System.Drawing.Size(98, 31)
         Me.lblCorreo.TabIndex = 2
         Me.lblCorreo.Text = "Correo:"
         '
@@ -233,34 +224,35 @@ Partial Class RegistrarUsuario
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(290, 32)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(483, 33)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(262, 31)
+        Me.Label1.Size = New System.Drawing.Size(263, 39)
         Me.Label1.TabIndex = 5
-        Me.Label1.Text = "REGISTRAR USUARIO"
+        Me.Label1.Text = "Registrar Usuario"
         '
         'dtgRU
         '
         Me.dtgRU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtgRU.Location = New System.Drawing.Point(891, 438)
+        Me.dtgRU.Location = New System.Drawing.Point(1188, 539)
+        Me.dtgRU.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtgRU.Name = "dtgRU"
         Me.dtgRU.RowHeadersWidth = 51
-        Me.dtgRU.Size = New System.Drawing.Size(17, 17)
+        Me.dtgRU.Size = New System.Drawing.Size(23, 21)
         Me.dtgRU.TabIndex = 8
         Me.dtgRU.Visible = False
         '
         'RegistrarUsuario
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.ProyectoSemestral.My.Resources.Resources.registrar_usuario_fondo
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(920, 467)
+        Me.ClientSize = New System.Drawing.Size(1227, 575)
         Me.ControlBox = False
         Me.Controls.Add(Me.dtgRU)
+        Me.Controls.Add(Me.btnRegistrarUsuario)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Label1)
         Me.HelpButton = True
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "RegistrarUsuario"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -269,6 +261,7 @@ Partial Class RegistrarUsuario
         Me.GroupBox1.PerformLayout()
         CType(Me.dtgRU, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 

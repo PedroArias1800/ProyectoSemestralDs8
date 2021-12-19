@@ -23,7 +23,6 @@ Partial Class Cobrar
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.cboCategoria = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.lboProductos = New System.Windows.Forms.ListBox()
@@ -38,14 +37,14 @@ Partial Class Cobrar
         Me.btnActualizar = New System.Windows.Forms.Button()
         Me.txtNombreCompleto = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dtg1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.cboCategoria)
         Me.GroupBox1.Controls.Add(Me.Label3)
@@ -60,50 +59,42 @@ Partial Class Cobrar
         Me.GroupBox1.Controls.Add(Me.btnReiniciar)
         Me.GroupBox1.Controls.Add(Me.btnActualizar)
         Me.GroupBox1.Controls.Add(Me.txtNombreCompleto)
-        Me.GroupBox1.Location = New System.Drawing.Point(49, 11)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(65, 73)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(854, 483)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(1139, 498)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(599, 235)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(187, 139)
-        Me.PictureBox1.TabIndex = 25
-        Me.PictureBox1.TabStop = False
         '
         'cboCategoria
         '
         Me.cboCategoria.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboCategoria.FormattingEnabled = True
-        Me.cboCategoria.Location = New System.Drawing.Point(618, 138)
-        Me.cboCategoria.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cboCategoria.Location = New System.Drawing.Point(824, 91)
+        Me.cboCategoria.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cboCategoria.Name = "cboCategoria"
-        Me.cboCategoria.Size = New System.Drawing.Size(219, 29)
+        Me.cboCategoria.Size = New System.Drawing.Size(291, 35)
         Me.cboCategoria.TabIndex = 24
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(520, 141)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(693, 95)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(94, 22)
+        Me.Label3.Size = New System.Drawing.Size(115, 27)
         Me.Label3.TabIndex = 23
         Me.Label3.Text = "Categoria:"
         '
         'lboProductos
         '
         Me.lboProductos.FormattingEnabled = True
-        Me.lboProductos.Location = New System.Drawing.Point(13, 188)
+        Me.lboProductos.ItemHeight = 16
+        Me.lboProductos.Location = New System.Drawing.Point(17, 153)
+        Me.lboProductos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lboProductos.Name = "lboProductos"
-        Me.lboProductos.Size = New System.Drawing.Size(480, 186)
+        Me.lboProductos.Size = New System.Drawing.Size(639, 228)
         Me.lboProductos.TabIndex = 22
         '
         'dtg1
@@ -115,13 +106,13 @@ Partial Class Cobrar
         Me.dtg1.BackgroundColor = System.Drawing.Color.LightCoral
         Me.dtg1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtg1.GridColor = System.Drawing.Color.Maroon
-        Me.dtg1.Location = New System.Drawing.Point(826, 440)
-        Me.dtg1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dtg1.Location = New System.Drawing.Point(1101, 463)
+        Me.dtg1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dtg1.Name = "dtg1"
         Me.dtg1.ReadOnly = True
         Me.dtg1.RowHeadersWidth = 51
         Me.dtg1.RowTemplate.Height = 24
-        Me.dtg1.Size = New System.Drawing.Size(24, 25)
+        Me.dtg1.Size = New System.Drawing.Size(32, 31)
         Me.dtg1.TabIndex = 21
         Me.dtg1.Visible = False
         '
@@ -129,10 +120,9 @@ Partial Class Cobrar
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(8, 142)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(11, 96)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(242, 25)
+        Me.Label2.Size = New System.Drawing.Size(299, 31)
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "Productos Seleccionados"
         '
@@ -140,20 +130,19 @@ Partial Class Cobrar
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(511, 88)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Location = New System.Drawing.Point(681, 30)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(33, 22)
+        Me.Label9.Size = New System.Drawing.Size(41, 27)
         Me.Label9.TabIndex = 19
         Me.Label9.Text = "ID:"
         '
         'btnVolver
         '
         Me.btnVolver.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVolver.Location = New System.Drawing.Point(4, 434)
-        Me.btnVolver.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnVolver.Location = New System.Drawing.Point(5, 455)
+        Me.btnVolver.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(91, 31)
+        Me.btnVolver.Size = New System.Drawing.Size(121, 38)
         Me.btnVolver.TabIndex = 15
         Me.btnVolver.Text = "Volver"
         Me.btnVolver.UseVisualStyleBackColor = True
@@ -162,10 +151,9 @@ Partial Class Cobrar
         '
         Me.txtId.AutoSize = True
         Me.txtId.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtId.Location = New System.Drawing.Point(540, 88)
-        Me.txtId.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.txtId.Location = New System.Drawing.Point(720, 30)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(30, 22)
+        Me.txtId.Size = New System.Drawing.Size(36, 27)
         Me.txtId.TabIndex = 16
         Me.txtId.Text = "00"
         '
@@ -173,30 +161,29 @@ Partial Class Cobrar
         '
         Me.cboProductos.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboProductos.FormattingEnabled = True
-        Me.cboProductos.Location = New System.Drawing.Point(618, 188)
-        Me.cboProductos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cboProductos.Location = New System.Drawing.Point(824, 153)
+        Me.cboProductos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cboProductos.Name = "cboProductos"
-        Me.cboProductos.Size = New System.Drawing.Size(219, 29)
+        Me.cboProductos.Size = New System.Drawing.Size(291, 35)
         Me.cboProductos.TabIndex = 15
         '
         'lblProductos
         '
         Me.lblProductos.AutoSize = True
         Me.lblProductos.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblProductos.Location = New System.Drawing.Point(523, 191)
-        Me.lblProductos.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblProductos.Location = New System.Drawing.Point(697, 156)
         Me.lblProductos.Name = "lblProductos"
-        Me.lblProductos.Size = New System.Drawing.Size(91, 22)
+        Me.lblProductos.Size = New System.Drawing.Size(109, 27)
         Me.lblProductos.TabIndex = 14
         Me.lblProductos.Text = "Producto:"
         '
         'btnReiniciar
         '
         Me.btnReiniciar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReiniciar.Location = New System.Drawing.Point(317, 396)
-        Me.btnReiniciar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnReiniciar.Location = New System.Drawing.Point(423, 409)
+        Me.btnReiniciar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnReiniciar.Name = "btnReiniciar"
-        Me.btnReiniciar.Size = New System.Drawing.Size(140, 36)
+        Me.btnReiniciar.Size = New System.Drawing.Size(187, 44)
         Me.btnReiniciar.TabIndex = 13
         Me.btnReiniciar.Text = "Reiniciar"
         Me.btnReiniciar.UseVisualStyleBackColor = True
@@ -204,10 +191,10 @@ Partial Class Cobrar
         'btnActualizar
         '
         Me.btnActualizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnActualizar.Location = New System.Drawing.Point(461, 396)
-        Me.btnActualizar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnActualizar.Location = New System.Drawing.Point(615, 409)
+        Me.btnActualizar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnActualizar.Name = "btnActualizar"
-        Me.btnActualizar.Size = New System.Drawing.Size(140, 36)
+        Me.btnActualizar.Size = New System.Drawing.Size(187, 44)
         Me.btnActualizar.TabIndex = 12
         Me.btnActualizar.Text = "Actualizar"
         Me.btnActualizar.UseVisualStyleBackColor = True
@@ -216,10 +203,9 @@ Partial Class Cobrar
         '
         Me.txtNombreCompleto.AutoSize = True
         Me.txtNombreCompleto.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombreCompleto.Location = New System.Drawing.Point(8, 81)
-        Me.txtNombreCompleto.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.txtNombreCompleto.Location = New System.Drawing.Point(11, 21)
         Me.txtNombreCompleto.Name = "txtNombreCompleto"
-        Me.txtNombreCompleto.Size = New System.Drawing.Size(237, 30)
+        Me.txtNombreCompleto.Size = New System.Drawing.Size(298, 36)
         Me.txtNombreCompleto.TabIndex = 1
         Me.txtNombreCompleto.Text = "Cliente Seleccionado:"
         '
@@ -227,29 +213,37 @@ Partial Class Cobrar
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(362, 15)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(615, 11)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(131, 36)
+        Me.Label1.Size = New System.Drawing.Size(133, 44)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "COBRAR"
+        Me.Label1.Text = "Cobrar"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(799, 210)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(249, 171)
+        Me.PictureBox1.TabIndex = 25
+        Me.PictureBox1.TabStop = False
         '
         'Cobrar
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.ProyectoSemestral.My.Resources.Resources.cobrar_fondo
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(947, 519)
+        Me.ClientSize = New System.Drawing.Size(1263, 601)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Cobrar"
         Me.ShowIcon = False
         Me.Text = "Cobrar"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dtg1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
