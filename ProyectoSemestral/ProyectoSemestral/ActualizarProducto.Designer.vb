@@ -23,6 +23,9 @@ Partial Class ActualizarProducto
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.txtId = New System.Windows.Forms.Label()
@@ -36,11 +39,17 @@ Partial Class ActualizarProducto
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtNombreCompleto = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtImg = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtImg)
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
+        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.btnVolver)
         Me.GroupBox1.Controls.Add(Me.txtId)
@@ -58,6 +67,36 @@ Partial Class ActualizarProducto
         Me.GroupBox1.Size = New System.Drawing.Size(817, 467)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(281, 198)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(288, 164)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 23
+        Me.PictureBox1.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(546, 145)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(236, 33)
+        Me.Button1.TabIndex = 22
+        Me.Button1.Text = "Seleccionar imagen..."
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(439, 148)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(95, 27)
+        Me.Label5.TabIndex = 21
+        Me.Label5.Text = "Imagen:"
         '
         'Label9
         '
@@ -92,7 +131,7 @@ Partial Class ActualizarProducto
         'btnReiniciar
         '
         Me.btnReiniciar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReiniciar.Location = New System.Drawing.Point(224, 353)
+        Me.btnReiniciar.Location = New System.Drawing.Point(230, 377)
         Me.btnReiniciar.Name = "btnReiniciar"
         Me.btnReiniciar.Size = New System.Drawing.Size(186, 44)
         Me.btnReiniciar.TabIndex = 13
@@ -102,7 +141,7 @@ Partial Class ActualizarProducto
         'btnActualizar
         '
         Me.btnActualizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnActualizar.Location = New System.Drawing.Point(416, 353)
+        Me.btnActualizar.Location = New System.Drawing.Point(422, 377)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(186, 44)
         Me.btnActualizar.TabIndex = 12
@@ -113,7 +152,7 @@ Partial Class ActualizarProducto
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(20, 171)
+        Me.Label4.Location = New System.Drawing.Point(20, 151)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(108, 27)
         Me.Label4.TabIndex = 7
@@ -122,7 +161,7 @@ Partial Class ActualizarProducto
         'txtCantidad
         '
         Me.txtCantidad.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCantidad.Location = New System.Drawing.Point(150, 165)
+        Me.txtCantidad.Location = New System.Drawing.Point(150, 145)
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(245, 33)
         Me.txtCantidad.TabIndex = 6
@@ -131,7 +170,7 @@ Partial Class ActualizarProducto
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(439, 116)
+        Me.Label3.Location = New System.Drawing.Point(439, 96)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(80, 27)
         Me.Label3.TabIndex = 5
@@ -140,7 +179,7 @@ Partial Class ActualizarProducto
         'txtPrecio
         '
         Me.txtPrecio.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPrecio.Location = New System.Drawing.Point(546, 113)
+        Me.txtPrecio.Location = New System.Drawing.Point(546, 93)
         Me.txtPrecio.Name = "txtPrecio"
         Me.txtPrecio.Size = New System.Drawing.Size(236, 33)
         Me.txtPrecio.TabIndex = 4
@@ -149,7 +188,7 @@ Partial Class ActualizarProducto
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(20, 116)
+        Me.Label2.Location = New System.Drawing.Point(20, 96)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(101, 27)
         Me.Label2.TabIndex = 3
@@ -158,7 +197,7 @@ Partial Class ActualizarProducto
         'txtNombre
         '
         Me.txtNombre.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(150, 113)
+        Me.txtNombre.Location = New System.Drawing.Point(150, 93)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(245, 33)
         Me.txtNombre.TabIndex = 2
@@ -183,6 +222,13 @@ Partial Class ActualizarProducto
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Actualizar Producto"
         '
+        'txtImg
+        '
+        Me.txtImg.Location = New System.Drawing.Point(797, 444)
+        Me.txtImg.Name = "txtImg"
+        Me.txtImg.Size = New System.Drawing.Size(19, 22)
+        Me.txtImg.TabIndex = 24
+        '
         'ActualizarProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -194,6 +240,7 @@ Partial Class ActualizarProducto
         Me.Text = "Actualizar Producto"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -213,4 +260,8 @@ Partial Class ActualizarProducto
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents txtNombreCompleto As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents txtImg As TextBox
 End Class

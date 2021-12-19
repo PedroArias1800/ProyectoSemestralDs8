@@ -22,16 +22,20 @@ Partial Class Bienvenida
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Bienvenida))
         Me.gbxInfo = New System.Windows.Forms.GroupBox()
         Me.horaSistema = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtBienvenida = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.gbxInfo.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'gbxInfo
         '
+        Me.gbxInfo.Controls.Add(Me.PictureBox1)
         Me.gbxInfo.Controls.Add(Me.horaSistema)
         Me.gbxInfo.Controls.Add(Me.Label2)
         Me.gbxInfo.Controls.Add(Me.Label1)
@@ -66,7 +70,7 @@ Partial Class Bienvenida
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(15, 18)
+        Me.Label1.Location = New System.Drawing.Point(15, 21)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(270, 44)
         Me.Label1.TabIndex = 3
@@ -82,6 +86,17 @@ Partial Class Bienvenida
         Me.txtBienvenida.TabIndex = 0
         Me.txtBienvenida.Text = "Bienvenido: "
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(832, 22)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(191, 181)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
+        '
         'Bienvenida
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -92,6 +107,7 @@ Partial Class Bienvenida
         Me.Text = "Bienvenida"
         Me.gbxInfo.ResumeLayout(False)
         Me.gbxInfo.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -101,4 +117,5 @@ Partial Class Bienvenida
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents txtBienvenida As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

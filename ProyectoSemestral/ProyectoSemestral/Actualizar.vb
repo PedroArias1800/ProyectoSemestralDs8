@@ -29,7 +29,6 @@ Public Class Actualizar
         Dim glComand As New SqlCommand
         Dim dtOrdenes As New DataTable
         Dim SqlDa As SqlDataAdapter
-        Dim cantidad As Integer
 
         glComand.Connection = mYConn
         If accion = "U" Then
@@ -146,11 +145,18 @@ Public Class Actualizar
             nombreElegido = dtg1.Item(1, e.RowIndex).Value.ToString
             pregunta = MsgBox("¿Desea actualizar los datos del producto " & nombreElegido & "?", vbYesNo)
             If pregunta = vbYes Then
+                Dim img As Image
                 ActualizarProducto.Close()
                 ActualizarProducto.txtId.Text = dtg1.Item(0, e.RowIndex).Value.ToString
                 ActualizarProducto.txtNombre.Text = dtg1.Item(1, e.RowIndex).Value.ToString
                 ActualizarProducto.txtPrecio.Text = dtg1.Item(2, e.RowIndex).Value.ToString
                 ActualizarProducto.txtCantidad.Text = dtg1.Item(3, e.RowIndex).Value.ToString
+                If System.IO.File.Exists("../../Productos/" & dtg1.Item(4, e.RowIndex).Value.ToString) Then
+                    ActualizarProducto.PictureBox1.Image = Image.FromFile("../../Productos/" & dtg1.Item(4, e.RowIndex).Value.ToString)
+                    ActualizarProducto.txtImg.Text = dtg1.Item(4, e.RowIndex).Value.ToString
+                Else
+                    ActualizarProducto.PictureBox1.Image = Image.FromFile("..\..\Productos\Producto.jpg")
+                End If
                 ActualizarProducto.MdiParent = MenuPrincipal
                 ActualizarProducto.WindowState = FormWindowState.Maximized
                 ActualizarProducto.txtNombreCompleto.Text = "Producto Seleccionado: " & dtg1.Item(1, e.RowIndex).Value.ToString
@@ -159,7 +165,7 @@ Public Class Actualizar
             End If
 
 
-        ElseIf accion = "E" Then
+            ElseIf accion = "E" Then
             nombreElegido = dtg1.Item(1, e.RowIndex).Value.ToString
             pregunta = MsgBox("¿Desea eliminar el producto " & nombreElegido & "?", vbYesNo)
             If pregunta = vbYes Then

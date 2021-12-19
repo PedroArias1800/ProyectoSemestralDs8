@@ -156,6 +156,7 @@
     <Compile Include="RegistrarUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TratarImagen.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Actualizar.resx">
@@ -184,9 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarCliente.resx">
       <DependentUpon>RegistrarCliente.vb</DependentUpon>
@@ -210,9 +211,12 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Productos\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Archivo\datacon.xml" />
+    <None Include="Archivo\FacturaEGPH.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
