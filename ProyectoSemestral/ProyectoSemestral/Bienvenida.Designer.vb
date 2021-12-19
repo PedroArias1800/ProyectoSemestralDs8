@@ -24,17 +24,18 @@ Partial Class Bienvenida
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Bienvenida))
         Me.gbxInfo = New System.Windows.Forms.GroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.horaSistema = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtBienvenida = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.gbxInfo.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'gbxInfo
         '
+        Me.gbxInfo.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.gbxInfo.Controls.Add(Me.PictureBox1)
         Me.gbxInfo.Controls.Add(Me.horaSistema)
         Me.gbxInfo.Controls.Add(Me.Label2)
@@ -45,46 +46,6 @@ Partial Class Bienvenida
         Me.gbxInfo.Size = New System.Drawing.Size(1042, 404)
         Me.gbxInfo.TabIndex = 6
         Me.gbxInfo.TabStop = False
-        '
-        'horaSistema
-        '
-        Me.horaSistema.AutoSize = True
-        Me.horaSistema.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.horaSistema.Location = New System.Drawing.Point(222, 331)
-        Me.horaSistema.Name = "horaSistema"
-        Me.horaSistema.Size = New System.Drawing.Size(245, 36)
-        Me.horaSistema.TabIndex = 5
-        Me.horaSistema.Text = "Hora del sistema:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(150, 270)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(689, 36)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Elija una de las opciones de la barra de navegación"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(15, 21)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(270, 44)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Menu Principal"
-        '
-        'txtBienvenida
-        '
-        Me.txtBienvenida.AutoSize = True
-        Me.txtBienvenida.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBienvenida.Location = New System.Drawing.Point(17, 89)
-        Me.txtBienvenida.Name = "txtBienvenida"
-        Me.txtBienvenida.Size = New System.Drawing.Size(155, 31)
-        Me.txtBienvenida.TabIndex = 0
-        Me.txtBienvenida.Text = "Bienvenido: "
         '
         'PictureBox1
         '
@@ -97,10 +58,56 @@ Partial Class Bienvenida
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
+        'horaSistema
+        '
+        Me.horaSistema.AutoSize = True
+        Me.horaSistema.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.horaSistema.ForeColor = System.Drawing.Color.White
+        Me.horaSistema.Location = New System.Drawing.Point(222, 331)
+        Me.horaSistema.Name = "horaSistema"
+        Me.horaSistema.Size = New System.Drawing.Size(245, 36)
+        Me.horaSistema.TabIndex = 5
+        Me.horaSistema.Text = "Hora del sistema:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(150, 270)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(689, 36)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Elija una de las opciones de la barra de navegación"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(15, 21)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(270, 44)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Menu Principal"
+        '
+        'txtBienvenida
+        '
+        Me.txtBienvenida.AutoSize = True
+        Me.txtBienvenida.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBienvenida.ForeColor = System.Drawing.Color.White
+        Me.txtBienvenida.Location = New System.Drawing.Point(17, 89)
+        Me.txtBienvenida.Name = "txtBienvenida"
+        Me.txtBienvenida.Size = New System.Drawing.Size(155, 31)
+        Me.txtBienvenida.TabIndex = 0
+        Me.txtBienvenida.Text = "Bienvenido: "
+        '
         'Bienvenida
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.ProyectoSemestral.My.Resources.Resources.neonCuadradoVerde2
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1080, 701)
         Me.Controls.Add(Me.gbxInfo)
         Me.Name = "Bienvenida"
