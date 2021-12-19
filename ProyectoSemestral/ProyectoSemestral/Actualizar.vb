@@ -164,7 +164,6 @@ Public Class Actualizar
             nombreElegido = dtg1.Item(1, e.RowIndex).Value.ToString
             pregunta = MsgBox("¿Desea actualizar los datos del producto " & nombreElegido & "?", vbYesNo)
             If pregunta = vbYes Then
-                Dim img As Image
                 ActualizarProducto.Close()
                 ActualizarProducto.txtId.Text = dtg1.Item(0, e.RowIndex).Value.ToString
                 ActualizarProducto.txtNombre.Text = dtg1.Item(1, e.RowIndex).Value.ToString
@@ -184,7 +183,7 @@ Public Class Actualizar
             End If
 
 
-            ElseIf accion = "E" Then
+        ElseIf accion = "E" Then
             nombreElegido = dtg1.Item(1, e.RowIndex).Value.ToString
             pregunta = MsgBox("¿Desea eliminar el producto " & nombreElegido & "?", vbYesNo)
             If pregunta = vbYes Then

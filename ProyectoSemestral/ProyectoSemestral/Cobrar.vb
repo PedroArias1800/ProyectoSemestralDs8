@@ -8,6 +8,11 @@ Public Class Cobrar
         Label1.Left = Me.Width / 2 - (Label1.Width / 2)
         GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
 
+        Label1.BackColor = Color.FromArgb(230, 64, 64, 64)
+        GroupBox1.BackColor = Color.FromArgb(230, 64, 64, 64)
+        btnCobrar.BackColor = Color.FromArgb(230, 64, 64, 64)
+        btnVolver.BackColor = Color.FromArgb(230, 64, 64, 64)
+
         total = 0.00
         dtg2.Columns.Add(0, "ID")
         dtg2.Columns.Add(1, "Cantidad")
@@ -56,37 +61,67 @@ Public Class Cobrar
     End Sub
 
     Private Sub cboProductos_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboProductos.SelectedIndexChanged
+        Dim pasar As String = "No"
+        Dim tryCatch As String = "No"
         If cboProductos.SelectedIndex > 0 Then
 
             Try
 
-                cantidad = InputBox("Producto: " & dtg1.Item(1, i).Value & vbCrLf &
-                                    "Unidades existentes: " & dtg1.Item(3, 0).Value & vbCrLf & vbCrLf &
-                                    "Ingrese la cantidad a cobrar:", "Catidad a Comprar", 1)
                 i = cboProductos.SelectedIndex - 1
+                cantidad = 0
 
-                If cantidad > 0 Then
+                Try
+                    cantidad = InputBox("Producto: " & dtg1.Item(1, i).Value & vbCrLf &
+                                        "Unidades existentes: " & dtg1.Item(3, i).Value & vbCrLf & vbCrLf &
+                                        "Ingrese la cantidad a cobrar:", "Cantidad a Comprar", 1)
+                Catch ex As Exception
+                    tryCatch = "Si"
+                End Try
+
+                If cantidad > 0 And cantidad <= dtg1.Item(3, i).Value Then
+
+                    dtg1.Item(3, i).Value = dtg1.Item(3, i).Value - cantidad
+
+                    For x = 0 To dtg2.Rows.Count - 1
+                        If dtg2.Item(2, x).Value.ToString = dtg1.Item(1, i).Value.ToString Then
+                            dtg2.Item(1, x).Value = dtg2.Item(1, x).Value + cantidad
+                            pasar = "Si"
+                        End If
+                    Next
 
                     If dtg2.Rows.Count = 0 Then
-                        dtg2.Rows.Add(dtg1.Item(0, i).Value, cantidad, dtg1.Item(1, i).Value, Math.Round(Val(dtg1.Item(2, i).Value), 2))
+                        dtg2.Rows.Add(dtg1.Item(0, i).Value, cantidad, dtg1.Item(1, i).Value, FormatNumber(CDbl(dtg1.Item(2, i).Value), 2), "")
                     Else
-                        dtg2.Rows(dtg2.Rows.Count - 1).Cells(0).Value = dtg1.Item(0, i).Value
-                        dtg2.Rows(dtg2.Rows.Count - 1).Cells(1).Value = cantidad
-                        dtg2.Rows(dtg2.Rows.Count - 1).Cells(2).Value = dtg1.Item(1, i).Value
-                        dtg2.Rows(dtg2.Rows.Count - 1).Cells(3).Value = Math.Round(Val(dtg1.Item(2, i).Value), 2)
-                        dtg2.Rows(dtg2.Rows.Count - 1).Cells(4).Value = ""
+                        If pasar = "No" Then
+                            dtg2.Rows(dtg2.Rows.Count - 1).Cells(0).Value = dtg1.Item(0, i).Value
+                            dtg2.Rows(dtg2.Rows.Count - 1).Cells(1).Value = cantidad
+                            dtg2.Rows(dtg2.Rows.Count - 1).Cells(2).Value = dtg1.Item(1, i).Value
+                            dtg2.Rows(dtg2.Rows.Count - 1).Cells(3).Value = FormatNumber(CDbl(dtg1.Item(2, i).Value), 2)
+                            dtg2.Rows(dtg2.Rows.Count - 1).Cells(4).Value = ""
+
+                        End If
                     End If
 
-                    total += cantidad * dtg1.Item(2, i).Value
-                    dtg2.Rows.Add("", "", "", "", total)
-                Else
+                    total += FormatNumber(CDbl(cantidad * dtg1.Item(2, i).Value), 2)
+
+                    If pasar = "No" Then
+                        dtg2.Rows.Add("", "", "", "", total)
+                    Else
+                        dtg2.Rows(dtg2.Rows.Count - 1).Cells(4).Value = total
+                    End If
+
+                    pasar = "No"
+
+                    PictureBox1.Image = Image.FromFile("..\..\Productos\" & dtg1.Item(4, i).Value.ToString)
+                ElseIf (cantidad = 0 And tryCatch = "No") Or (cantidad > dtg1.Item(3, i).Value And tryCatch = "No") Then
                     MsgBox("Ingrese una cantidad valida")
+                Else
+                    tryCatch = "No"
                 End If
 
                 cantidad = 0
 
                 cboProductos.SelectedIndex = 0
-                PictureBox1.Image = Image.FromFile("..\..\Productos\Producto.jpg")
 
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
@@ -95,6 +130,25 @@ Public Class Cobrar
                     mYConn.Close()
                 End If
             End Try
+        End If
+    End Sub
+
+    Private Sub cboProductos_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboProductos.KeyPress
+        If Asc(e.KeyChar) <> 0 Then
+            If Asc(e.KeyChar) < 45 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
+        Dim pregunta As String
+        pregunta = MsgBox("¿Está seguro de salir y no facturar?, los datos se perderán...", vbYesNo, "Volver")
+        If pregunta = vbYes Then
+            Me.Close()
+            Bienvenida.MdiParent = MenuPrincipal
+            Bienvenida.WindowState = FormWindowState.Maximized
+            Bienvenida.Show()
         End If
     End Sub
 
