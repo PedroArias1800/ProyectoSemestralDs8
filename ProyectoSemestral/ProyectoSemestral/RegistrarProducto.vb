@@ -53,7 +53,7 @@ Public Class RegistrarProducto
                     txtNombre.Text = ""
                     txtPrecio.Text = ""
                     txtCantidad.Text = ""
-                    PictureBox1.Image = Nothing
+                    PictureBox1.Image = Image.FromFile("..\..\Productos\Producto.jpg")
 
                 Catch ex As Exception
                     MsgBox("No se pudo registrar al producto, vuelva a intentarlo
