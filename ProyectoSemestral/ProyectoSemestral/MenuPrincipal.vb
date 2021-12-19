@@ -53,8 +53,11 @@
 
     'Facturar - Cobrar
     Private Sub CobrarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CobrarToolStripMenuItem1.Click
-        'Cobrar
-
+        accion = "CC"
+        Actualizar.Close()
+        Actualizar.MdiParent = Me
+        Actualizar.WindowState = FormWindowState.Maximized
+        Actualizar.Show()
     End Sub
 
     'Buscar Usuario

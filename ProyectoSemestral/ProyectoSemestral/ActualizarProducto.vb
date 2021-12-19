@@ -122,8 +122,7 @@ Public Class ActualizarProducto
 
     Private Sub txtCantidad_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCantidad.KeyPress
         If Asc(e.KeyChar) <> 8 Then
-            If Asc(e.KeyChar) < 48 Or Convert.ToInt32(e.KeyChar) <> Keys.Back Then
-
+            If Asc(e.KeyChar) < 45 Or Asc(e.KeyChar) > 57 Then
                 e.Handled = True
             End If
         End If

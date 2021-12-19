@@ -57,3 +57,10 @@ C:\Users\User\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSe
 C:\Users\User\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.exe
 C:\Users\User\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.xml
 C:\Users\User\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.pdb
+C:\Users\jrica\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.Actualizar.resources
+C:\Users\jrica\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.ActualizarCliente.resources
+C:\Users\jrica\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.ActualizarProducto.resources
+C:\Users\jrica\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.ActualizarUsuario.resources
+C:\Users\jrica\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.Bienvenida.resources
+C:\Users\jrica\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.RegistrarProducto.resources
+C:\Users\jrica\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.Cobrar.resources
