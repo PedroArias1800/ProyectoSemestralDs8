@@ -24,7 +24,6 @@ Partial Class RegistrarProducto
     Private Sub InitializeComponent()
         Me.btnRegistrarProducto = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtPrecio = New System.Windows.Forms.TextBox()
@@ -34,6 +33,7 @@ Partial Class RegistrarProducto
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -41,7 +41,7 @@ Partial Class RegistrarProducto
         'btnRegistrarProducto
         '
         Me.btnRegistrarProducto.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRegistrarProducto.Location = New System.Drawing.Point(436, 479)
+        Me.btnRegistrarProducto.Location = New System.Drawing.Point(438, 481)
         Me.btnRegistrarProducto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRegistrarProducto.Name = "btnRegistrarProducto"
         Me.btnRegistrarProducto.Size = New System.Drawing.Size(201, 47)
@@ -60,22 +60,13 @@ Partial Class RegistrarProducto
         Me.GroupBox1.Controls.Add(Me.lblCantidad)
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.lblNombre)
-        Me.GroupBox1.Location = New System.Drawing.Point(49, 122)
+        Me.GroupBox1.Location = New System.Drawing.Point(49, 105)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(967, 339)
+        Me.GroupBox1.Size = New System.Drawing.Size(967, 356)
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(344, 165)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(288, 164)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 13
-        Me.PictureBox1.TabStop = False
         '
         'Button1
         '
@@ -164,6 +155,17 @@ Partial Class RegistrarProducto
         Me.Label1.Size = New System.Drawing.Size(284, 39)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Registrar Producto"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox1.Image = Global.ProyectoSemestral.My.Resources.Resources.Producto
+        Me.PictureBox1.Location = New System.Drawing.Point(338, 160)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(296, 182)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 13
+        Me.PictureBox1.TabStop = False
         '
         'RegistrarProducto
         '

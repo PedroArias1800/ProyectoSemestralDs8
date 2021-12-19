@@ -162,6 +162,12 @@
     <Compile Include="RegistrarUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reporte.Designer.vb">
+      <DependentUpon>Reporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TratarImagen.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -207,6 +213,9 @@
     <EmbeddedResource Include="RegistrarUsuario.resx">
       <DependentUpon>RegistrarUsuario.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporte.resx">
+      <DependentUpon>Reporte.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -220,11 +229,10 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Productos\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Archivo\datacon.xml" />
+    <None Include="Productos\Producto.jpg" />
     <None Include="Archivo\FacturaEGPH.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

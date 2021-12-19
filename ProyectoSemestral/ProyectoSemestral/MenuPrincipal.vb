@@ -135,6 +135,8 @@
 
     'Reporte
     Private Sub ReporteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteToolStripMenuItem.Click
-        'Reporte
+        Reporte.MdiParent = Me
+        Reporte.WindowState = FormWindowState.Maximized
+        Reporte.Show()
     End Sub
 End Class
