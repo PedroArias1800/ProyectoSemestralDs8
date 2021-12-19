@@ -23,8 +23,8 @@ Public Class Reporte
             If dtOrdenes.Rows.Count <> 0 Then
                 dtg1.DataSource = dtOrdenes
                 For x = 0 To dtOrdenes.Rows.Count - 1
-                    dtg1.Item(4, x).Value = FormatNumber(CDbl(dtg1.Item(4, x).Value), 2)
-                    total = total + dtg1.Item(4, x).Value
+                    dtg1.Item(5, x).Value = FormatNumber(CDbl(dtg1.Item(5, x).Value), 2)
+                    total = total + dtg1.Item(5, x).Value
                 Next
                 txtTotal.Text = txtTotal.Text & total
             Else

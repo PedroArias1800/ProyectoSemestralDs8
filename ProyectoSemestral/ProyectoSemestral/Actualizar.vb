@@ -62,7 +62,6 @@ Public Class Actualizar
                         dtg1.Item(2, x).Value = FormatNumber(CDbl(dtg1.Item(2, x).Value), 2)
                     Next
 
-
                 End If
             Else
                 Label2.Text = "No hay datos para desplegar"
