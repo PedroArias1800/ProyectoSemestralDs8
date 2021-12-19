@@ -66,3 +66,4 @@ C:\Users\jrica\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoS
 C:\Users\jrica\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.Cobrar.resources
 C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.Cobrar.resources
 C:\Users\leone\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.Reporte.resources
+C:\Users\jrica\Documents\GitHub\ProyectoSemestralDs8\ProyectoSemestral\ProyectoSemestral\obj\Debug\ProyectoSemestral.Reporte.resources
