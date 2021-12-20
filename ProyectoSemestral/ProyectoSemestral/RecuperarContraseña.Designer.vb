@@ -39,7 +39,7 @@ Partial Class RecuperarContraseña
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(257, 58)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(399, 45)
+        Me.Label1.Size = New System.Drawing.Size(385, 44)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Recuperar Contraseña"
         '
@@ -111,6 +111,7 @@ Partial Class RecuperarContraseña
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "RecuperarContraseña"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RecuperarContraseña"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

@@ -3,12 +3,13 @@
 Public Class RegistrarUsuario
 
     Private Sub RegistrarUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        btnRegistrarUsuario.Left = Me.Width / 2 - (btnRegistrarUsuario.Width / 2)
-        Label1.Left = Me.Width / 2 - (Label1.Width / 2)
+        Label1.Top = Me.Height / 6 - (Label1.Height / 2)
+        GroupBox1.Top = Me.Height / 2.5 - (GroupBox1.Height / 2)
+        btnRegistrarUsuario.Top = Me.Height / 1.4 - (btnRegistrarUsuario.Height / 2)
 
-        GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 1.8)
-        btnRegistrarUsuario.Left = Me.Width / 2 - (btnRegistrarUsuario.Width / 1.8)
-        Label1.Left = Me.Width / 2 - (Label1.Width / 1.8)
+        Label1.Left = Me.Width / 2 - (Label1.Width / 2)
+        GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
+        btnRegistrarUsuario.Left = Me.Width / 2 - (btnRegistrarUsuario.Width / 2)
 
         Label1.BackColor = Color.FromArgb(230, 64, 64, 64)
         GroupBox1.BackColor = Color.FromArgb(230, 64, 64, 64)

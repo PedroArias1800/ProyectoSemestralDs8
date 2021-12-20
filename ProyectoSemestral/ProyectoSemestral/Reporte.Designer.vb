@@ -110,6 +110,7 @@ Partial Class Reporte
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoValidate = System.Windows.Forms.AutoValidate.Disable
         Me.BackgroundImage = Global.ProyectoSemestral.My.Resources.Resources.verdeCompleto
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1112, 593)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)

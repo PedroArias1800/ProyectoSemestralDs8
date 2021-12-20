@@ -47,8 +47,14 @@ Public Class ActualizarCliente
     End Sub
 
     Private Sub ActualizarCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label1.Left = Me.Width / 2 - (Label1.Width / 1.8)
-        GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 1.8)
+        Label1.Top = Me.Height / 6 - (Label1.Height / 2)
+        GroupBox1.Top = Me.Height / 2 - (GroupBox1.Height / 2)
+
+        Label1.Left = Me.Width / 2 - (Label1.Width / 2)
+        GroupBox1.Left = Me.Width / 2 - (GroupBox1.Width / 2)
+
+        Label1.BackColor = Color.FromArgb(230, 64, 64, 64)
+        GroupBox1.BackColor = Color.FromArgb(230, 64, 64, 64)
 
         Label1.BackColor = Color.FromArgb(230, 64, 64, 64)
         GroupBox1.BackColor = Color.FromArgb(230, 64, 64, 64)
