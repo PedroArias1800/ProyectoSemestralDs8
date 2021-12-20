@@ -89,7 +89,6 @@ Public Class Login
                                 glComand2.ExecuteNonQuery()
                                 SqlDa2 = New SqlDataAdapter(glComand2)
                                 SqlDa2.Fill(dtOrdenes2)
-                                MsgBox("Llego50")
 
                             Catch ex As Exception
 
