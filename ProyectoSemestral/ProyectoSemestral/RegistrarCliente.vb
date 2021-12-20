@@ -39,6 +39,16 @@ Public Class RegistrarCliente
         Else
             MsgBox("Debe llenar todos los campos", vbYes, "Error")
         End If
+
+        If cobrar2 = "Si" Then
+            cobrar2 = "No"
+            accion = "CC"
+            Me.Close()
+            Actualizar.Close()
+            Actualizar.MdiParent = MenuPrincipal
+            Actualizar.WindowState = FormWindowState.Maximized
+            Actualizar.Show()
+        End If
     End Sub
 
     Private Sub RegistrarCliente_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
@@ -59,6 +69,9 @@ Public Class RegistrarCliente
         Label1.BackColor = Color.FromArgb(230, 64, 64, 64)
         GroupBox1.BackColor = Color.FromArgb(230, 64, 64, 64)
         btnRegistrarCliente.BackColor = Color.FromArgb(230, 64, 64, 64)
+
+        Me.BackgroundImage = Image.FromFile("..\..\Resources\verdeCompleto.jpg")
+
     End Sub
 
 End Class

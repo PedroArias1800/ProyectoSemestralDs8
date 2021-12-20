@@ -7,8 +7,12 @@
 
 
     Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Me.BackgroundImage = Image.FromFile("..\..\Resources\verdeCompleto.jpg")
+
         Me.WindowState = FormWindowState.Maximized
         MenuStrip1.ForeColor = Color.FromArgb(230, 255, 255, 255)
+
         If tipo = 1 Then
             Bienvenida.txtBienvenida.Text = "Bienvenido Administrador " & nombreCompleto
         ElseIf tipo = 2 Then

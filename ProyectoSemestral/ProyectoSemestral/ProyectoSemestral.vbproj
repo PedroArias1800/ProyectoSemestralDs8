@@ -249,17 +249,6 @@
     <None Include="Resources\neonCuadradoVerde2.jpg" />
     <None Include="Resources\verdeCompleto.jpg" />
     <None Include="Resources\neonCuadradoVerde.jpg" />
-    <None Include="Resources\registrar_producto_fondo.jpg" />
-    <None Include="Resources\registrar_cliente_fondo.jpg" />
-    <None Include="Resources\menu_fondo.jpg" />
-    <None Include="Resources\login_fondo.jpg" />
-    <None Include="Resources\cobrar_fondo.jpg" />
-    <None Include="Resources\actualizar_usuario_fondo.jpg" />
-    <None Include="Resources\actualizar_product_fondo.jpg" />
-    <None Include="Resources\actualizar_fondo.jpeg" />
-    <None Include="Resources\actualizar_cliente_fondo.jpeg" />
-    <None Include="Resources\reporte_fondo.jpg" />
-    <None Include="Resources\registrar_usuario_fondo.jpg" />
     <None Include="Productos\Producto.jpg" />
     <None Include="Archivo\FacturaEGPH.PNG" />
   </ItemGroup>

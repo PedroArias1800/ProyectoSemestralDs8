@@ -56,7 +56,6 @@ Public Class Login
                         spl1 = Split(fecha(1), ":")
                         spl2 = Split(passU(1), ":")
                         If Int(spl1(0)) = Int(spl2(0)) Then
-                            MsgBox("Llego1")
                             If Int(spl1(1)) = Int(spl2(1)) Then
                                 borrar = "Si"
                             ElseIf Int(spl1(1)) > Int(spl2(1)) Then

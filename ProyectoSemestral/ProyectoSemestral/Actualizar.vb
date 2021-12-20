@@ -2,6 +2,9 @@
 
 Public Class Actualizar
     Private Sub Actualizar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Button1.Visible = False
+
         'Escribiendo textos
         If accion = "U" Then
             Label1.Text = "Actualizar Usuarios"
@@ -12,6 +15,7 @@ Public Class Actualizar
         ElseIf accion = "CC" Then
             Label1.Text = "Cobrar"
             Label2.Text = "Seleccione un cliente de la lista"
+            Button1.Visible = True
         ElseIf accion = "P" Then
             Label1.Text = "Actualizar Productos"
             Label2.Text = "Seleccione un producto de la lista"
@@ -231,5 +235,13 @@ Public Class Actualizar
         Bienvenida.MdiParent = MenuPrincipal
         Bienvenida.WindowState = FormWindowState.Maximized
         Bienvenida.Show()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+        cobrar2 = "Si"
+        RegistrarCliente.MdiParent = MenuPrincipal
+        RegistrarCliente.WindowState = FormWindowState.Maximized
+        RegistrarCliente.Show()
     End Sub
 End Class
